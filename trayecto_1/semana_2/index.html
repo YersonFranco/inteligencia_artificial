@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modelos fundacionales, LLM y Transformer — Inteligencia Artificial, Trayecto 1.">
-  <title>Semana 2 · Inteligencia Artificial | Yerson Franco</title>
+  <meta name="description" content="Explicación sencilla sobre cómo generan respuestas los modelos de lenguaje y qué conviene comprobar.">
+  <title>Semana 2 · Modelos de lenguaje | Yerson Franco</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,129 +17,109 @@
     </nav>
     <div class="container text-center">
       <h1>Semana 2</h1>
-      <p class="encabezado-subtitulo">Modelos fundacionales, LLM y Transformer</p>
+      <p class="encabezado-subtitulo">Cómo construye respuestas un modelo de lenguaje</p>
     </div>
   </header>
+
   <main class="contenedor-semana">
-    <section class="mb-5" aria-labelledby="titulo-semana">
-      <p class="text-secondary mb-1">Trayecto 1 · Semana 2</p>
-      <h2 class="h3 fw-bold titulo-seccion" id="titulo-semana">Modelos fundacionales, LLM y Transformer</h2>
-      <p>Recorrido conceptual por la generación de respuestas: del texto a los tokens, el contexto y los límites que debemos revisar.</p>
-      <article class="mision-semana">
-        <strong>Al terminar podrás:</strong> explicar de forma conceptual cómo funcionan los modelos generativos modernos y reconocer sus capacidades y límites.
-      </article>
-    </section>
-    <section class="mb-5" aria-labelledby="conceptos-title">
-      <h2 class="h3 fw-bold titulo-seccion" id="conceptos-title">Conceptos clave</h2>
+    <header class="introduccion-semana mb-5">
+      <p class="text-secondary mb-1">Inteligencia artificial · Trayecto 1</p>
+      <h2 class="h3 fw-bold titulo-seccion">¿Qué ocurre entre tu pregunta y la respuesta?</h2>
+      <p class="mb-0">Un modelo de lenguaje no busca una respuesta completa dentro de una lista. Procesa el texto y va construyendo una continuación con la información que tiene disponible.</p>
+    </header>
+
+    <section class="mb-5" aria-labelledby="recorrido-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="recorrido-title">Del mensaje a una respuesta</h2>
+      <p>Podemos imaginarlo como un recorrido: cada etapa prepara la siguiente.</p>
       <div class="row g-3">
-        <div class="col-md-6 col-lg-4">
-          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Servicio y modelo</h3><p class="mb-0">El servicio es la aplicación que usas; el modelo es uno de los componentes que procesa la solicitud. Un servicio puede ofrecer varios modelos y herramientas.</p></article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Modelo fundacional</h3><p class="mb-0">Sirve como base para distintas tareas, como explicar un concepto, traducir o proponer código.</p></article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">LLM</h3><p class="mb-0">Sigla de modelo de lenguaje grande: procesa secuencias de tokens y puede generar texto a partir del contexto recibido.</p></article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Token</h3><p class="mb-0">Unidad de texto que puede ser una palabra, parte de una palabra o un signo. La división depende del tokenizador.</p></article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Atención</h3><p class="mb-0">Componente del Transformer que relaciona representaciones de distintas posiciones del contexto mediante operaciones numéricas.</p></article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Multimodalidad</h3><p class="mb-0">Algunos modelos pueden procesar o combinar texto, imágenes y audio.</p></article>
-        </div>
-      </div>
-    </section>
-    <section class="mb-5" aria-labelledby="lectura-title">
-      <h2 class="h3 fw-bold titulo-seccion" id="lectura-title">Lee el tema por partes</h2>
-      <p class="text-secondary">Tres partes · aproximadamente 3 minutos de lectura</p>
-      <details class="contenido-semana lectura-parte mb-3" open>
-        <summary><span class="numero-parte">1</span><span><strong>Del texto a los tokens</strong><small>Incluye: predecir el siguiente token y atención</small></span></summary>
-        <div class="lectura-contenido">
-          <p>Un tokenizador divide el texto en unidades y les asigna identificadores. Una palabra puede convertirse en uno o varios tokens; por eso los costos, los límites y la ventana de contexto suelen medirse en tokens y no en palabras.</p>
-          <p>Los identificadores se transforman en vectores, representaciones numéricas aprendidas que se combinan con la posición de cada token. Durante la generación, el modelo calcula puntuaciones para posibles tokens siguientes; softmax puede convertirlas en probabilidades. Estas describen continuaciones posibles, no la certeza de que una afirmación sea verdadera. Un LLM por sí solo no consulta una base de verdades y puede producir información inventada.</p>
-          <p>La temperatura modifica la distribución usada para seleccionar tokens: puede aumentar o reducir la variedad, pero no es un control directo de exactitud. Después de elegir un token, el modelo lo añade al contexto y repite el proceso.</p>
-          <h3 class="h5 text-primary">La atención en el Transformer</h3>
-          <p class="mb-0">La atención relaciona partes del contexto. En «Necesito un banco para sentarme» y «Necesito un banco para retirar dinero», las palabras que rodean a «banco» aportan relaciones distintas. No es una persona que decide dónde mirar: es un mecanismo numérico. En un modelo generativo causal, cada posición usa el contexto anterior disponible, no tokens futuros que aún no se han generado.</p>
-        </div>
-      </details>
-      <details class="contenido-semana lectura-parte mb-3">
-        <summary><span class="numero-parte">2</span><span><strong>Modelos fundacionales, de frontera y de pesos abiertos</strong><small>Incluye: multimodalidad y una línea de investigación</small></span></summary>
-        <div class="lectura-contenido">
-          <p>Son características distintas y no excluyentes. Un modelo fundacional sirve de base para muchas tareas; uno de frontera destaca entre los sistemas más avanzados en ciertas capacidades; uno de pesos abiertos permite acceder a sus parámetros entrenados bajo una licencia. Un mismo modelo puede reunir las tres características: usarlo por API no determina si es de frontera.</p>
-          <p>Que los pesos sean abiertos no significa automáticamente que el código sea abierto ni que el modelo sea mejor o peor.</p>
-          <p>Algunos modelos con pesos disponibles pueden ejecutarse en un equipo o servidor propio, según la licencia y los recursos necesarios. Ejecutarlos localmente no garantiza por sí solo la privacidad: también importan la configuración, el acceso a los datos y la seguridad del equipo.</p>
-          <p>Los modelos multimodales combinan modalidades como texto, imagen y audio. El aprendizaje federado es una línea de investigación que permite entrenar modelos con datos que permanecen en distintos dispositivos; en esta sesión se presenta como concepto, no como implementación.</p>
-          <p class="mb-0">La disponibilidad de modelos, servicios y licencias puede variar. Conviene revisar las condiciones vigentes antes de elegir una herramienta.</p>
-        </div>
-      </details>
-      <details class="contenido-semana lectura-parte">
-        <summary><span class="numero-parte">3</span><span><strong>Capacidades y límites</strong><small>Qué hace bien y qué debemos comprobar</small></span></summary>
-        <div class="lectura-contenido">
-          <p>Un LLM puede resumir, traducir, redactar borradores, explicar código y responder en el formato solicitado. También puede inventar datos o fuentes, reflejar sesgos, desconocer sucesos posteriores a su fecha de corte y responder de forma distinta a la misma pregunta.</p>
-          <p>Entrenamiento e inferencia son procesos distintos. En inferencia se usan parámetros ya entrenados para procesar el contexto; añadir una instrucción o documento puede cambiar la respuesta sin modificar esos parámetros. La memoria de una aplicación y el uso posterior de conversaciones para entrenamiento también son procesos separados.</p>
-          <p>Generar código no significa ejecutarlo. Para probarlo, el servicio debe disponer de una herramienta y usarla. Del mismo modo, una respuesta en un chat no demuestra que se haya buscado en internet: hay que comprobar si se usó búsqueda y abrir las fuentes.</p>
-          <p class="mb-0">El contexto puede incluir instrucciones, mensajes anteriores, documentos y resultados de herramientas, y tiene un límite. Más texto no garantiza una mejor respuesta: importan la relevancia, la consistencia y que el propósito y los criterios estén claros.</p>
-        </div>
-      </details>
-    </section>
-    <section class="mb-5" aria-labelledby="actividades-title">
-      <h2 class="h3 fw-bold titulo-seccion" id="actividades-title">Actividades de la sesión</h2>
-      <p>Las actividades comparan herramientas y respuestas, y muestran por qué el propósito debe estar claro antes de pedir una recomendación.</p>
-      <div class="row g-3">
-        <div class="col-lg-4">
-          <article class="contenido-semana actividad-sesion h-100">
-            <span class="numero-actividad">Actividad 1 · Exploración</span>
-            <h3 class="h5 fw-bold mt-2">Explora tres servicios de IA</h3>
-            <ul>
-              <li>Revisa tres servicios; el video sugiere ChatGPT, Claude y Gemini, pero puedes elegir otros.</li>
-              <li>Observa qué acceso ofrecen y si requieren una cuenta. No hace falta contratar un plan.</li>
-              <li>Registra el servicio y el modelo seleccionado, si la interfaz lo muestra.</li>
-              <li>Consulta al TL qué herramienta recomienda para explicar conceptos, revisar código o trabajar con documentos.</li>
-            </ul>
+        <div class="col-md-6">
+          <article class="contenido-semana etapa-llm h-100">
+            <span class="numero-etapa">1</span>
+            <h3 class="h5 fw-bold">El texto se divide</h3>
+            <p class="mb-0">El modelo separa lo que escribimos en <strong>tokens</strong>. Un token puede ser una palabra, una parte de ella o un signo. Por eso una palabra no siempre equivale a un token y los límites de uso suelen contarse en tokens.</p>
           </article>
         </div>
-        <div class="col-lg-4">
-          <article class="contenido-semana actividad-sesion h-100">
-            <span class="numero-actividad">Actividad 2 · Comparación</span>
-            <h3 class="h5 fw-bold mt-2">Haz la misma petición en dos servicios</h3>
-            <p>Abre conversaciones nuevas y usa exactamente este texto:</p>
-            <blockquote class="prompt-actividad">«Explica qué es un token para alguien que empieza a programar e incluye un ejemplo».</blockquote>
-            <p class="mb-0">Compara claridad, precisión y suposiciones. Si las respuestas discrepan, consulta una fuente y al TL; que coincidan tampoco demuestra que sean correctas.</p>
+        <div class="col-md-6">
+          <article class="contenido-semana etapa-llm h-100">
+            <span class="numero-etapa">2</span>
+            <h3 class="h5 fw-bold">Las piezas se convierten en números</h3>
+            <p class="mb-0">Cada token se representa con números para que el modelo pueda procesarlo. También importa el orden: «el perro persigue al gato» no comunica lo mismo que «el gato persigue al perro».</p>
           </article>
         </div>
-        <div class="col-lg-4">
-          <article class="contenido-semana actividad-sesion h-100">
-            <span class="numero-actividad">Actividad 3 · En clase</span>
-            <h3 class="h5 fw-bold mt-2">Tres cupos, ocho estudiantes</h3>
-            <ol>
-              <li>Con la tabla que entregue el equipo, elige por tu cuenta tres personas para acompañamiento.</li>
-              <li>Consulta después a una IA y guarda la instrucción y la respuesta.</li>
-              <li>Cuando recibas la descripción del Programa A o B, abre una conversación nueva y repite la misma instrucción añadiendo esa descripción.</li>
-              <li>Compara nombres, razones y datos que todavía faltan; conserva ambas consultas para compartirlas con tu clan.</li>
-            </ol>
-            <p class="nota-proposito mb-0">No hay una selección justificable sin conocer el propósito del acompañamiento y los criterios del programa. Una nota aislada no demuestra esfuerzo ni predice cuánto mejorará una persona.</p>
+        <div class="col-md-6">
+          <article class="contenido-semana etapa-llm h-100">
+            <span class="numero-etapa">3</span>
+            <h3 class="h5 fw-bold">El contexto ayuda a interpretar</h3>
+            <p class="mb-0">La <strong>atención</strong>, una parte del Transformer, relaciona elementos del texto. Así, la palabra «banco» puede entenderse de forma distinta en «me senté en el banco» y «fui al banco a retirar dinero».</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana etapa-llm h-100">
+            <span class="numero-etapa">4</span>
+            <h3 class="h5 fw-bold">La respuesta se arma paso a paso</h3>
+            <p class="mb-0">El modelo calcula qué tokens podrían continuar, elige uno y vuelve a calcular con el texto ampliado. Repite ese ciclo hasta completar la respuesta.</p>
           </article>
         </div>
       </div>
+      <aside class="idea-clave mt-3">
+        <strong>Una diferencia importante:</strong> esas probabilidades ayudan a elegir cómo continúa el texto; no indican qué tan verdadera es una afirmación. La temperatura puede cambiar la variedad de las respuestas, pero no garantiza que sean correctas.
+      </aside>
     </section>
-    <section aria-labelledby="repaso-title">
-      <h2 class="h3 fw-bold titulo-seccion" id="repaso-title">Preguntas para repasar</h2>
-      <ol class="preguntas-repaso">
-        <li>¿Qué diferencia hay entre un servicio de IA y el modelo que utiliza?</li>
-        <li>¿Qué significa que un modelo tenga pesos abiertos? ¿Equivale a código abierto?</li>
-        <li>¿Qué es un token y por qué una palabra puede dividirse en varios?</li>
-        <li>¿Cómo ayuda la atención a interpretar una palabra según su contexto?</li>
-        <li>¿Qué diferencia hay entre entrenamiento e inferencia?</li>
-        <li>¿Las probabilidades de los siguientes tokens indican la certeza de que una respuesta sea verdadera?</li>
-        <li>¿Qué cambia la temperatura y qué no garantiza?</li>
-        <li>¿Qué diferencia hay entre generar código y ejecutarlo, o entre escribir una fuente y consultarla?</li>
-        <li>¿Por qué el propósito del programa cambia a quién se debería priorizar para acompañamiento?</li>
-      </ol>
+
+    <section class="mb-5" aria-labelledby="tipos-modelo-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="tipos-modelo-title">Tres formas de describir un modelo</h2>
+      <p>Estas expresiones hablan de aspectos diferentes. Un mismo modelo puede cumplir más de una descripción.</p>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <article class="contenido-semana tipo-modelo h-100">
+            <h3 class="h5 fw-bold">Fundacional</h3>
+            <p class="mb-0">Es una base amplia que puede adaptarse a tareas distintas, como resumir, traducir o ayudar con código.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="contenido-semana tipo-modelo h-100">
+            <h3 class="h5 fw-bold">De frontera</h3>
+            <p class="mb-0">Se considera entre los modelos más avanzados para ciertas capacidades. La etiqueta depende del momento y de la tarea que se compare.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="contenido-semana tipo-modelo h-100">
+            <h3 class="h5 fw-bold">De pesos abiertos</h3>
+            <p class="mb-0">Sus parámetros entrenados están disponibles bajo ciertas condiciones. Eso no significa automáticamente que el código sea abierto ni que usarlo garantice privacidad.</p>
+          </article>
+        </div>
+      </div>
+      <p class="nota-modelos mt-3 mb-0">Por ejemplo, usar un modelo mediante una página web o una API no permite concluir por sí solo si es de frontera. Para ejecutarlo en un equipo propio también hacen falta una licencia compatible y recursos suficientes.</p>
     </section>
+
+    <section class="mb-5" aria-labelledby="uso-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="uso-title">Lo que puede hacer y lo que debemos revisar</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Puede ayudar a…</h3>
+            <p class="mb-0">Explicar ideas, resumir textos, proponer borradores, traducir o sugerir código. Algunos modelos también reciben imágenes o audio; por eso se llaman <strong>multimodales</strong>.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana limite-modelo h-100">
+            <h3 class="h5 fw-bold">Conviene comprobar…</h3>
+            <p class="mb-0">Puede inventar datos o referencias, repetir sesgos y desconocer hechos posteriores a su fecha de entrenamiento. También puede responder diferente ante la misma pregunta.</p>
+          </article>
+        </div>
+      </div>
+      <div class="contenido-semana mt-3">
+        <h3 class="h5 fw-bold">Escribir no es ejecutar; responder no es buscar</h3>
+        <p class="mb-0">Que una IA escriba código no prueba que lo haya ejecutado. Que mencione una fuente tampoco prueba que la haya consultado. Hay que revisar las herramientas usadas y comprobar el resultado.</p>
+      </div>
+    </section>
+
+    <aside class="cierre-semana mb-4">
+      <h2 class="h5 fw-bold">La idea para llevar</h2>
+      <p class="mb-0">Un modelo produce una continuación a partir del texto y el contexto disponibles. Puede ser útil, pero entender cómo llegó a su respuesta nos ayuda a pedir mejor y a verificar lo importante.</p>
+    </aside>
   </main>
+
   <footer class="pie text-center text-white"><p class="mb-0">&copy; 2026 Yerson Franco</p></footer>
 </body>
 </html>

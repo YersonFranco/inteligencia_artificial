@@ -1,23 +1,7 @@
-# Semana 2 — Modelos fundacionales, LLM y Transformer
+# Semana 2 — Modelos de lenguaje
 
-Comprender de forma conceptual cómo funcionan los modelos generativos, qué papel cumplen los tokens y la atención, y qué capacidades y límites se deben considerar al usarlos.
+Explicación del recorrido que sigue un modelo de lenguaje para construir una respuesta, de cómo el contexto aporta significado y de qué debemos revisar al usar estos sistemas.
 
-## Conceptos clave
-
-La página desarrolla la diferencia entre servicio y modelo, los modelos fundacionales, los LLM, los tokens, la atención del Transformer y la multimodalidad.
-
-## Lectura
-
-El contenido se organiza en tres partes: del texto a los tokens; modelos fundacionales, de frontera y de pesos abiertos; y capacidades y límites de los modelos generativos.
-
-## Actividades de la sesión
-
-La página presenta la exploración de tres servicios, la comparación de una misma petición en dos servicios y el ejercicio de priorización de tres cupos entre ocho estudiantes. Incluye la instrucción exacta de comparación y los criterios de análisis.
-
-## Repaso
-
-Nueve preguntas ayudan a revisar los conceptos de servicio y modelo, tokens, atención, inferencia, temperatura, verificación de herramientas y propósito del acompañamiento.
+La página también aclara la diferencia entre modelos fundacionales, de frontera y de pesos abiertos, y presenta sus capacidades y límites con ejemplos sencillos.
 
 [Volver a las semanas](../../index.html)
-
-[Volver al portafolio](../../index.html)
