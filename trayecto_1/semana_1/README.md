@@ -2,9 +2,14 @@
 
 Distinguir los conceptos fundamentales de inteligencia artificial y delimitar un caso de uso para un asistente de conocimiento.
 
+## Sección 1: mapa de conceptos
+
+El mapa presenta la jerarquía entre inteligencia artificial, aprendizaje automático y aprendizaje profundo, y explica la relación de la IA generativa con estos enfoques. También distingue los algoritmos y las reglas escritas de los sistemas que aprenden a partir de ejemplos.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
 - Portafolio de sesión: dos entradas de bitácora, una tarjeta de decisión y el pasaporte del asistente.
 
+[Ver el mapa de conceptos](index.html)
 [Volver al portafolio](../../index.html)

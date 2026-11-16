@@ -1,1 +1,60 @@
 @import url("../../../css/style.css");
+
+.mapa-conceptual {
+  padding: 1.25rem;
+  border: 1px solid #d6deea;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px #00000012;
+}
+
+.nodo-concepto {
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid #d6deea;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.nodo-ia {
+  border-top: 4px solid #1e3a8a;
+  background-color: #f7f9fd;
+}
+
+.nodo-ml {
+  border-left: 4px solid #1d4ed8;
+}
+
+.nodo-dl {
+  margin-top: 1rem;
+  border-left: 4px solid #6c8fe8;
+  background-color: #f5f7fa;
+}
+
+.nodo-generativa {
+  border-left: 4px solid #efb53f;
+  background-color: #fffdf6;
+}
+
+.etiqueta-concepto {
+  background-color: #1e3a8a;
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+.nota-relacion {
+  padding: .75rem;
+  border-radius: 5px;
+  background-color: #f5f7fa;
+  color: #46515f;
+  font-size: .92rem;
+}
+
+.nota-mapa {
+  color: #46515f;
+  font-size: .95rem;
+}
+
+@media (max-width: 576px) {
+  .mapa-conceptual { padding: 1rem; }
+}
