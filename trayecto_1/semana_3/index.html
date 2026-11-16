@@ -89,6 +89,59 @@
       </div>
     </section>
 
+    <section class="mb-5" aria-labelledby="plantilla-asistente">
+      <h2 class="h3 fw-bold titulo-seccion" id="plantilla-asistente">Plantilla para consultas del clan</h2>
+      <p>Esta instrucción delimita el rol del asistente, las fuentes que puede usar, cómo debe responder cuando falta información y el formato de salida. Incluye dos ejemplos y el espacio variable <code>{pregunta}</code>.</p>
+      <article class="contenido-semana prompt-contenedor">
+        <pre class="prompt-codigo mb-3"><code>Eres el asistente del clan de Riwi y respondes a coders que están empezando el entrenamiento.
+Usa solo la información de la Guía del clan y el calendario oficial. Si un dato no aparece en esos materiales, dilo y recomienda consultarlo con el TL o el coach.
+No respondas temas fuera del entrenamiento ni compares coders entre sí.
+Responde en máximo tres viñetas y termina con la fuente.
+
+Ejemplo 1 · Pregunta: ¿Cuándo es la sesión de IA? · Respuesta:
+- Los martes, una hora con tu clan.
+- Fuente: calendario del clan.
+
+Ejemplo 2 · Pregunta: ¿Quién es el mejor coder? · Respuesta:
+- No tengo información para comparar coders.
+- Fuente: alcance del asistente.
+
+Pregunta: {pregunta}</code></pre>
+        <a class="btn btn-primary" href="plantilla_asistente.js" download>Descargar plantilla y casos en JavaScript</a>
+      </article>
+    </section>
+
+    <section class="mb-5" aria-labelledby="material-consulta">
+      <h2 class="h3 fw-bold titulo-seccion" id="material-consulta">Material de consulta del asistente</h2>
+      <article class="contenido-semana material-clan">
+        <h3 class="h5 fw-bold">Guía del clan · IA, Trayecto 1</h3>
+        <ul>
+          <li>Cada semana incluye el video del tema, trabajo independiente en Moodle y una hora con el TL por clan.</li>
+          <li>La sesión con el TL es los martes y dura una hora con el clan.</li>
+          <li>La evidencia semanal se entrega en la Tarea de Moodle; la de semana 3 es una plantilla de prompt con cinco casos.</li>
+          <li>La guía no incluye fechas límite ni notas. Las notas, permisos y excepciones corresponden al TL o al coach.</li>
+        </ul>
+        <a class="enlace-semana" href="material_consulta_clan.md" download>Descargar material de consulta</a>
+      </article>
+    </section>
+
+    <section class="mb-5" aria-labelledby="casos-prueba">
+      <h2 class="h3 fw-bold titulo-seccion" id="casos-prueba">Cinco casos y sus respuestas esperadas</h2>
+      <p>Los casos cubren una consulta frecuente, una entrega, un dato ausente, una pregunta ambigua y una consulta fuera del alcance. Las respuestas esperadas permiten contrastar la salida con el material del clan.</p>
+      <div class="table-responsive contenido-semana tabla-casos-prompt">
+        <table class="table table-bordered align-middle mb-0">
+          <thead><tr><th scope="col">Tipo de caso</th><th scope="col">Pregunta</th><th scope="col">Respuesta esperada</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Frecuente</th><td>¿Cuándo es la sesión de IA?</td><td>Los martes, una hora con tu clan. Cita el calendario del clan.</td></tr>
+            <tr><th scope="row">Entrega</th><td>¿Cómo entrego la evidencia?</td><td>En la Tarea de Moodle de la semana; la evidencia de semana 3 es la plantilla con cinco casos. Cita la guía.</td></tr>
+            <tr><th scope="row">Dato ausente</th><td>¿Cuál es la fecha límite de la entrega?</td><td>La guía no informa la fecha; recomienda confirmarla con el TL o el coach y cita la guía.</td></tr>
+            <tr><th scope="row">Ambigua</th><td>¿Y lo de mañana?</td><td>Pide precisar si se refiere al video, al trabajo en Moodle o a la sesión, y cita la guía.</td></tr>
+            <tr><th scope="row">Fuera del alcance</th><td>¿Quién va a ganar el partido del domingo?</td><td>Rechaza con cortesía, redirige a temas del entrenamiento y cita el alcance del asistente.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     <section aria-labelledby="evidencias-semana">
       <h2 class="h3 fw-bold titulo-seccion" id="evidencias-semana">Evidencias de aprendizaje</h2>
       <article class="contenido-semana">

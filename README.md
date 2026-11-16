@@ -54,4 +54,10 @@ Abre [index.html](index.html) para acceder a las semanas del trayecto.
     │       │   └── style.css
     │       └── registro_tres_cupos.txt
     └── semana_3/
+        ├── index.html
+        ├── README.md
+        ├── css/
+        │   └── style.css
+        ├── plantilla_asistente.js
+        └── material_consulta_clan.md
 ```

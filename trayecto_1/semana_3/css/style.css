@@ -18,3 +18,24 @@
 }
 
 .limite-modelo { border-top: 4px solid #e1a72c; }
+
+.prompt-codigo {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 6px;
+  background: #f3f5f9;
+  color: #252a34;
+  font-size: .9rem;
+  white-space: pre-wrap;
+}
+
+.prompt-codigo code { color: inherit; }
+
+.material-clan { border-left: 5px solid #1d9a78; }
+
+.tabla-casos-prompt { overflow: hidden; }
+
+.tabla-casos-prompt thead th {
+  background: #e9edf6;
+  color: #23386f;
+}

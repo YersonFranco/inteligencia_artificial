@@ -9,4 +9,9 @@ La página explica los componentes de una instrucción, la diferencia entre zero
 - Plantilla de prompt reutilizable.
 - Cinco casos de prueba con respuestas esperadas, incluida una pregunta ambigua y una fuera de tema.
 
+## Archivos de la actividad
+
+- `plantilla_asistente.js`: plantilla con espacio `{pregunta}`, ejemplos few-shot y cinco casos con respuesta esperada.
+- `material_consulta_clan.md`: información de referencia usada para formular los casos y revisar las respuestas.
+
 [Volver al portafolio](../../index.html)
