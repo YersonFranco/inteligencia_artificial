@@ -160,6 +160,22 @@
   overflow-wrap: anywhere;
 }
 
+.pasaporte .sello {
+  display: inline-block;
+  margin-bottom: .75rem;
+  padding: .4rem .7rem;
+  border-radius: 999px;
+  background: #e7efff;
+  color: #1e3a8a;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.pasaporte section + section {
+  padding-top: 1rem;
+  border-top: 1px solid #d6deea;
+}
+
 @media (max-width: 768px) {
   .flujo-asistente { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

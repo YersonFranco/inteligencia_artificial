@@ -16,7 +16,7 @@ La tarjeta responde al giro final del reto: aparece un libro con solo el título
 
 ## Sección 4: pasaporte del asistente
 
-El pasaporte define el problema que atiende Brújula Van Rossum, el tipo de preguntas que puede responder, los datos que necesita y protege, y los casos que requieren revisión humana.
+El pasaporte define el problema que atiende Brújula Van Rossum, el tipo de preguntas que puede responder, los datos que necesita y protege, el flujo R/M/H y el mensaje que presenta cuando falta información.
 
 [Ver el pasaporte del asistente](pasaporte_asistente.html)
 
