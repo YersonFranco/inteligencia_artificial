@@ -14,6 +14,8 @@ body {
   color: #252a34;
 }
 
+main { flex: 1; }
+
 .bg-oscuro {
   position: relative;
   background-color: #23418b;
@@ -173,6 +175,18 @@ body {
 
 .encabezado { padding: 1rem 0 1.1rem; }
 
+.encabezado-semana {
+  padding: .65rem 0 1rem;
+  text-align: center;
+}
+
+.encabezado-semana h1 { margin: 0; }
+
+.encabezado-semana .encabezado-subtitulo {
+  margin: .15rem 0 0;
+  color: #e4eaff;
+}
+
 .logo-riwi {
   display: inline-block;
   width: 112px;
@@ -201,6 +215,36 @@ body {
 
 .enlaces-proyecto a:hover { border-bottom-color: #fff; }
 
+.navegacion-semanas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: .75rem;
+  width: 100%;
+  margin: 0 auto .35rem;
+  padding-top: .15rem;
+  padding-bottom: .15rem;
+}
+
+.navegacion-semanas a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navegacion-semanas a:hover { text-decoration: underline; }
+
+.navegacion-anterior { justify-self: start; }
+
+.navegacion-centro {
+  justify-self: center;
+  text-align: center;
+}
+
+.navegacion-siguiente {
+  justify-self: end;
+  text-align: right;
+}
+
 .pie {
   margin-top: 0;
   border: 0;
@@ -213,4 +257,11 @@ body {
   }
 
   .encabezado h1 { font-size: 1.75rem; }
+}
+
+@media (max-width: 600px) {
+  .navegacion-semanas {
+    gap: .35rem;
+    font-size: .8rem;
+  }
 }
