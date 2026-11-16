@@ -43,7 +43,7 @@ Abre [index.html](index.html) para acceder a las semanas del trayecto.
     │   ├── css/
     │   │   └── style.css
     │   ├── js/
-    │   │   └── ejecutar_python.js
+    │   │   └── ordenar.js
     │   ├── python/
     │   │   └── ordenar.py
     │   └── tres_cupos/

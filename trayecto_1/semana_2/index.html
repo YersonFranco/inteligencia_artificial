@@ -147,8 +147,8 @@
     </section>
 
     <section class="mb-5" aria-labelledby="practica-title">
-      <h2 class="h3 fw-bold titulo-seccion" id="practica-title">Práctica: ordenar tres números con Python</h2>
-      <p>El mismo principio de comparar y cambiar de lugar se puede convertir en un programa. Escribe tres enteros y ejecútalo aquí; el navegador carga Python para correr el algoritmo.</p>
+      <h2 class="h3 fw-bold titulo-seccion" id="practica-title">Práctica: ordenar tres números</h2>
+      <p>Prueba en la página el procedimiento de comparar e intercambiar. La práctica interactiva funciona directamente en el navegador; también puedes descargar el algoritmo en Python para ejecutarlo en tu equipo.</p>
       <form class="contenido-semana" id="formulario-ordenamiento">
         <div class="row g-3">
           <div class="col-sm-4">
@@ -164,12 +164,26 @@
             <input class="form-control" id="numero-3" name="numero-3" type="number" step="1" required>
           </div>
         </div>
-        <button class="btn btn-primary mt-3" id="ejecutar-ordenamiento" type="submit">Ordenar con Python</button>
-        <output class="resultado-python d-block mt-3" id="resultado-ordenamiento" aria-live="polite">El intérprete Python se prepara al ejecutar el ejercicio.</output>
+        <button class="btn btn-primary mt-3" id="ejecutar-ordenamiento" type="submit">Ordenar números</button>
+        <output class="resultado-ordenamiento d-block mt-3" id="resultado-ordenamiento" aria-live="polite">El resultado aparecerá aquí.</output>
       </form>
 
-      <p class="contenido-semana mt-3 mb-0">El formulario ejecuta el mismo archivo <a href="python/ordenar.py" download>ordenar.py</a> que puedes descargar y correr en tu equipo.</p>
-      <p class="nota-modelos mt-3 mb-0">La primera carga necesita internet para obtener Python en el navegador. Si abres los archivos desde tu equipo, usa un servidor local para que la página pueda cargar el archivo `.py`. Los números se procesan en el navegador.</p>
+      <div class="contenido-semana mt-3">
+        <h3 class="h5 fw-bold">Casos para comprobar</h3>
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered align-middle mb-0">
+            <thead><tr><th scope="col">Entrada</th><th scope="col">Resultado esperado</th></tr></thead>
+            <tbody>
+              <tr><td>7, 2, 5</td><td>2, 5, 7</td></tr>
+              <tr><td>9, 5, 1</td><td>1, 5, 9</td></tr>
+              <tr><td>5, 1, 5</td><td>1, 5, 5</td></tr>
+              <tr><td>-3, 5, -1</td><td>-3, -1, 5</td></tr>
+              <tr><td>4, 4, 4</td><td>4, 4, 4</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="contenido-semana mt-3 mb-0">Para conservar la evidencia solicitada, descarga <a href="python/ordenar.py" download>ordenar.py</a> y ejecútalo con Python. La página usa JavaScript solo para que puedas probar el mismo procedimiento sin instalar nada.</p>
     </section>
 
     <aside class="cierre-semana mb-4">
@@ -179,7 +193,6 @@
   </main>
 
   <footer class="pie text-center text-white"><p class="mb-0">&copy; 2026 Yerson Franco</p></footer>
-  <script src="https://cdn.jsdelivr.net/pyodide/v0.29.2/full/pyodide.js"></script>
-  <script src="js/ejecutar_python.js"></script>
+  <script src="js/ordenar.js"></script>
 </body>
 </html>
