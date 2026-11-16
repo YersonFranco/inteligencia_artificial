@@ -10,6 +10,10 @@ El mapa presenta la jerarquía entre inteligencia artificial, aprendizaje autom�
 
 El asistente está dirigido a los coders de Van Rossum para consultar temas, horarios y entregas del entrenamiento desde materiales oficiales. No responde sobre notas, permisos o excepciones ni inventa datos ausentes; cuando no encuentra una respuesta, remite al TL o al coach.
 
+## Sección 3: tarjeta de decisión
+
+La tarjeta analiza el pedido de crear una descripción para un libro cuando solo se conoce el título. Propone solicitar datos verificables antes de generar el texto y explicita el riesgo de inventar información.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
