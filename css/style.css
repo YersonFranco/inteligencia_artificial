@@ -108,6 +108,21 @@ body {
 
 .pie small { color: #dce5ff; }
 
+.pie-navegacion {
+  margin-bottom: 8px;
+}
+
+.pie-navegacion a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pie-navegacion a:hover {
+  color: #dce5ff;
+  text-decoration: underline;
+}
+
 .btn-primary {
   --bs-btn-bg: #1d4ed8;
   --bs-btn-border-color: #1d4ed8;
