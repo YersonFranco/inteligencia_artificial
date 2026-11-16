@@ -219,6 +219,71 @@
         </div>
       </div>
     </section>
+    <section class="mt-5" aria-labelledby="ordenamiento-title">
+      <p class="text-secondary mb-1">Semana 1 · Sección 7</p>
+      <h2 class="h3 fw-bold titulo-seccion" id="ordenamiento-title">Reto de clase 1: eres el computador</h2>
+      <p>El procedimiento ordena tres tarjetas comparando e intercambiando solo las posiciones indicadas. Se ejecuta paso a paso, sin saltarse instrucciones.</p>
+      <article class="contenido-semana pasos-ordenamiento mb-3">
+        <h3 class="h5 fw-bold text-primary">Procedimiento</h3>
+        <ol class="mb-0">
+          <li>Compara la primera y la segunda tarjeta; si la primera es mayor, intercámbialas.</li>
+          <li>Compara la segunda y la tercera tarjeta; si la segunda es mayor, intercámbialas.</li>
+          <li>Compara otra vez la primera y la segunda; si la primera es mayor, intercámbialas.</li>
+        </ol>
+      </article>
+      <div class="table-responsive contenido-semana tabla-filtro">
+        <table class="table table-hover align-middle mb-0">
+          <thead><tr><th scope="col">Entrada</th><th scope="col">Después de cada paso</th><th scope="col">Resultado</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">7, 2, 5</th><td>1: 2, 7, 5 · 2: 2, 5, 7 · 3: 2, 5, 7</td><td>2, 5, 7</td></tr>
+            <tr><th scope="row">2, 2, 9 (empate)</th><td>1: 2, 2, 9 · 2: 2, 2, 9 · 3: 2, 2, 9</td><td>2, 2, 9</td></tr>
+            <tr><th scope="row">9, 5, 1</th><td>1: 5, 9, 1 · 2: 5, 1, 9 · 3: 1, 5, 9</td><td>1, 5, 9</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="alert alert-primary mt-3 mb-0"><strong>Decisiones condicionales:</strong> el procedimiento tiene tres comparaciones «si… entonces». La persona debe ejecutarlas literalmente; no basta con decir «ordena».</p>
+    </section>
+    <section class="mt-5" aria-labelledby="filtro-title">
+      <p class="text-secondary mb-1">Semana 1 · Sección 8</p>
+      <h2 class="h3 fw-bold titulo-seccion" id="filtro-title">Reto de clase 2: juega a ser el filtro</h2>
+      <p>El ejercicio etiqueta mensajes deseados y no deseados, y después contrasta esas pistas con mensajes nuevos.</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="contenido-semana ejemplos-filtro h-100">
+            <h3 class="h5 fw-bold text-primary">Mensajes no deseados</h3>
+            <ul class="mb-0">
+              <li>«Ganaste un premio. Haz clic para reclamarlo».</li>
+              <li>«Oferta exclusiva: paga hoy y recibe el doble».</li>
+              <li>«Tu cuenta será bloqueada. Entra a este enlace y confirma tu clave».</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana ejemplos-filtro h-100">
+            <h3 class="h5 fw-bold text-primary">Mensajes deseados</h3>
+            <ul class="mb-0">
+              <li>«La clase de mañana comienza a las 10:00».</li>
+              <li>«La entrega del proyecto será el viernes».</li>
+              <li>«Adjunto el acta de la reunión del equipo».</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <h3 class="h5 fw-bold text-primary mt-4">Prueba del clasificador</h3>
+      <div class="table-responsive contenido-semana tabla-filtro">
+        <table class="table table-hover align-middle mb-0">
+          <thead><tr><th scope="col">Caso</th><th scope="col">Clasificación o respuesta</th><th scope="col">Lectura</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Premio con enlace para reclamar un celular</th><td><span class="badge text-bg-danger">No deseado</span></td><td>Premio inesperado y llamado a abrir un enlace.</td></tr>
+            <tr><th scope="row">Cambio de salón para el taller de mañana</th><td><span class="badge text-bg-success">Deseado</span></td><td>Información concreta del entrenamiento.</td></tr>
+            <tr><th scope="row">Correo oficial de Riwi con un taller gratuito</th><td><span class="badge text-bg-warning">La regla simple diría «no deseado»</span></td><td>Es un falso positivo: la regla «si ofrece algo» no considera el remitente oficial ni el contexto.</td></tr>
+            <tr><th scope="row">Dato que faltaba en el entrenamiento</th><td>Remitente y contexto verificables</td><td>Permiten distinguir una oferta legítima de un señuelo; no basta con detectar que el mensaje ofrece algo.</td></tr>
+            <tr><th scope="row">Aviso de vencimiento que pide la clave en un enlace desconocido</th><td><span class="badge text-bg-danger">No deseado</span></td><td>Solicita una contraseña mediante un enlace no confiable.</td></tr>
+            <tr><th scope="row">El filtro se equivoca en una predicción</th><td><span class="badge text-bg-primary">Revisión</span></td><td>Una persona revisa el caso y corrige las etiquetas o las pistas antes de confiar en futuras predicciones.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </main>
   <footer class="pie">
     <nav class="pie-navegacion" aria-label="Navegación del pie de página">

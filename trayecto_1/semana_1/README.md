@@ -28,12 +28,22 @@ El boceto presenta la pantalla inicial de Brújula Van Rossum; el flujo organiza
 
 Se documentan dos casos del reto en una línea por máquina: la generación de una explicación a pedido y la aplicación de un descuento mediante una condición fija. Cada registro sigue la secuencia caso, mecanismo, pista del enunciado y posible error.
 
+## Sección 7: reto de ordenamiento paso a paso
+
+Se registra la ejecución literal del procedimiento con la entrada inicial, un caso de empate y un caso difícil. Se identifican sus tres decisiones condicionales.
+
+## Sección 8: reto de clasificación de mensajes
+
+El ejercicio reúne ejemplos deseados y no deseados y revisa seis predicciones. Destaca el falso positivo que produce una regla basada solo en ofertas, la importancia de verificar el remitente y el contexto, y la revisión humana cuando el filtro se equivoca.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
 - Portafolio de sesión: dos entradas de bitácora, una tarjeta de decisión y el pasaporte del asistente.
 - Flujo de atención del asistente y prueba de sus límites.
 - Dos entradas de bitácora del reto «La feria de las máquinas».
+- Ejecución del procedimiento de ordenamiento con tres entradas.
+- Ejercicio de clasificación de mensajes con revisión de errores.
 
 [Ver el mapa de conceptos](index.html)
 [Volver al portafolio](../../index.html)
