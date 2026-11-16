@@ -1,11 +1,14 @@
-# Semana 2 — Modelos de lenguaje
+# Semana 2 — Modelos de lenguaje y toma de decisiones
 
-Explicación del recorrido que sigue un modelo de lenguaje para construir una respuesta, de cómo el contexto aporta significado y de qué debemos revisar al usar estos sistemas.
+Esta semana reúne una explicación del recorrido de una respuesta generada por un modelo de lenguaje, una práctica de ordenamiento con Python y el análisis del caso «Tres cupos, ocho estudiantes».
 
-La página también aclara la diferencia entre modelos fundacionales, de frontera y de pesos abiertos, y presenta sus capacidades y límites con ejemplos sencillos.
+## Contenido
 
-## Práctica de ordenamiento
+- `index.html`: resumen conceptual y práctica de ordenamiento ejecutable en el navegador.
+- `python/ordenar.py`: algoritmo que ordena tres números enteros mediante comparaciones.
+- `tres_cupos/index.html`: elección inicial, respuestas de Claude y Gemini, análisis con el Programa B y conclusión.
+- `tres_cupos/riwi_tres_cupos_borrador.txt`: registro descargable del caso y de las dos rondas con Claude.
 
-El archivo `python/ordenar.py` ordena tres enteros mediante comparaciones. La página carga y ejecuta ese mismo archivo en el navegador con Python mediante Pyodide. La primera ejecución requiere internet para cargar el intérprete y la página debe abrirse desde un servidor local o desde GitHub Pages.
+La actividad de tres cupos parte de un caso ficticio. Las selecciones son propuestas para analizar y no sustituyen la revisión del equipo docente.
 
 [Volver a las semanas](../../index.html)

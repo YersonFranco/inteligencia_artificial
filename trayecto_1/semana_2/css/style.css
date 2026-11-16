@@ -57,6 +57,8 @@
 
 .limite-modelo { border-top: 4px solid #e1a72c; }
 
+.actividad-destacada .contenido-semana { border-left: 5px solid #1d9a78; }
+
 .cierre-semana {
   padding: 1.2rem 1.3rem;
   border: 1px solid #a6ddcf;
@@ -70,15 +72,3 @@
   color: #23418b;
   font-weight: 700;
 }
-
-.codigo-python summary { cursor: pointer; }
-
-.codigo-python pre {
-  overflow-x: auto;
-  padding: 1rem;
-  border-radius: 6px;
-  background: #17213f;
-  color: #f5f7ff;
-}
-
-.codigo-python code { color: inherit; }

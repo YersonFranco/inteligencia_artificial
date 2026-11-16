@@ -1,31 +1,31 @@
 # Inteligencia Artificial — Trayecto 1
 
-Repositorio académico de Yerson Franco para las actividades del módulo de Inteligencia Artificial del Trayecto 1 de Riwi. El contenido se presenta con la misma identidad visual y navegación del portafolio académico.
+Repositorio académico de Yerson Franco para las actividades del módulo de Inteligencia Artificial de Riwi. Sus páginas comparten la identidad visual y la navegación del portafolio.
 
 ## Productos del trayecto
 
-- Algoritmo.
-- Archivo descargable.
-- Página web con IA.
+- Algoritmo de ordenamiento.
+- Registro descargable de la actividad práctica.
+- Página web desarrollada con apoyo de herramientas de IA.
 
 ## Contenido por semana
 
-| Semana | Tema | Evidencias de aprendizaje |
+| Semana | Tema | Evidencias |
 |---|---|---|
-| 1 | IA, aprendizaje automático, aprendizaje profundo e IA generativa | Mapa de conceptos, caso de uso delimitado y pasaporte del asistente. |
-| 2 | Modelos fundacionales, LLM y Transformer | Algoritmo de ordenamiento, registro de pruebas y explicación de la solución. |
-| 3 | Ingeniería de prompts y evaluación básica | Plantilla de prompt y cinco casos de prueba. |
+| 1 | Inteligencia artificial, aprendizaje automático, aprendizaje profundo e IA generativa | Mapa de conceptos, caso de uso delimitado y pasaporte del asistente. |
+| 2 | Modelos de lenguaje y toma de decisiones | Explicación conceptual, algoritmo de ordenamiento y actividad «Tres cupos, ocho estudiantes». |
+| 3 | Ingeniería de prompts y evaluación básica | Plantilla de prompt y casos de prueba. |
 
 ## Navegación
 
-Abre [index.html](index.html) en un navegador para acceder a las páginas de cada semana.
+Abre [index.html](index.html) para acceder a las semanas del trayecto.
 
 ## Tecnologías
 
-- HTML5
-- CSS3
-- Bootstrap 5.3.3
-- JavaScript para las actividades que lo requieran
+- HTML5 y CSS3
+- Bootstrap 5
+- JavaScript para las actividades interactivas
+- Python para el algoritmo de ordenamiento
 
 ## Estructura
 
@@ -34,24 +34,22 @@ Abre [index.html](index.html) en un navegador para acceder a las páginas de cad
 ├── index.html
 ├── README.md
 ├── css/
-│   └── style.css
 ├── img/
-│   ├── icon.png
-│   └── riwi.png
 └── trayecto_1/
     ├── semana_1/
-    │   ├── index.html
-    │   ├── README.md
-    │   ├── css/
-    │   └── js/
     ├── semana_2/
     │   ├── index.html
     │   ├── README.md
     │   ├── css/
-    │   └── js/
+    │   │   └── style.css
+    │   ├── js/
+    │   │   └── ejecutar_python.js
+    │   ├── python/
+    │   │   └── ordenar.py
+    │   └── tres_cupos/
+    │       ├── index.html
+    │       ├── css/
+    │       │   └── style.css
+    │       └── riwi_tres_cupos_borrador.txt
     └── semana_3/
-        ├── index.html
-        ├── README.md
-        ├── css/
-        └── js/
 ```
