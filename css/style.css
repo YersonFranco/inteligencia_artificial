@@ -1,6 +1,6 @@
 :root {
-  --bs-primary: #1d4ed8;
-  --bs-primary-rgb: 29, 78, 216;
+  --bs-primary: #2452bb;
+  --bs-primary-rgb: 36, 82, 187;
 }
 
 html { height: 100%; }
@@ -10,34 +10,38 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
-  background-color: #f5f7fa;
+  background-color: #f1f4f8;
   color: #252a31;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .bg-oscuro {
-  background-color: #1e3a8a;
+  position: relative;
+  padding: 16px 16px 4px !important;
+  background-color: #203e87;
 }
 
 .site-header-brand {
-  position: relative;
-  max-width: 900px;
+  position: static;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .riwi-logo {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: max(16px, calc((100% - 1100px) / 2));
   width: 124px;
   height: 62px;
   object-fit: contain;
-  transform: translateY(-65%);
+  transform: translateY(-50%);
 }
 
 .contenido-principal {
   flex: 1;
   width: min(92%, 1140px);
-  margin: 28px auto 36px;
+  margin: 49px auto 36px;
 }
 
 .contenedor-semana {
@@ -50,7 +54,12 @@ body {
   margin-bottom: 8px;
   padding-bottom: 6px;
   border-bottom: 2px solid #1d4ed8;
-  color: #1d4ed8;
+  color: #2452bb;
+}
+
+.titulo-portada {
+  margin-bottom: 8px;
+  color: #2452bb;
 }
 
 .icono-semana {
@@ -97,9 +106,9 @@ body {
 
 .pie {
   margin-top: auto;
-  padding: 16px 16px 14px;
+  padding: 20px 16px 16px;
   border-top: 4px solid #3156a9;
-  background-color: #1e3a8a;
+  background-color: #203e87;
   color: #fff;
   text-align: center;
 }
@@ -124,12 +133,12 @@ body {
 }
 
 .btn-primary {
-  --bs-btn-bg: #1d4ed8;
-  --bs-btn-border-color: #1d4ed8;
-  --bs-btn-hover-bg: #1e3a8a;
-  --bs-btn-hover-border-color: #1e3a8a;
-  --bs-btn-active-bg: #1e3a8a;
-  --bs-btn-active-border-color: #1e3a8a;
+  --bs-btn-bg: #2452d3;
+  --bs-btn-border-color: #2452d3;
+  --bs-btn-hover-bg: #173eaa;
+  --bs-btn-hover-border-color: #173eaa;
+  --bs-btn-active-bg: #173eaa;
+  --bs-btn-active-border-color: #173eaa;
 }
 
 .btn:focus-visible,
