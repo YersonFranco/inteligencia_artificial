@@ -14,6 +14,12 @@ El asistente está dirigido a los coders de Van Rossum para consultar temas, hor
 
 La tarjeta analiza el pedido de crear una descripción para un libro cuando solo se conoce el título. Propone solicitar datos verificables antes de generar el texto y explicita el riesgo de inventar información.
 
+## Sección 4: pasaporte del asistente
+
+El pasaporte define el problema que atiende Brújula Van Rossum, el tipo de preguntas que puede responder, los datos que necesita y protege, y los casos que requieren revisión humana.
+
+[Ver el pasaporte del asistente](pasaporte_asistente.html)
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
