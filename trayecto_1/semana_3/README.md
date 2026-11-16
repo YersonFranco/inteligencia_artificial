@@ -2,6 +2,8 @@
 
 Diseñar instrucciones claras y reutilizables, y evaluar las respuestas con casos de prueba definidos.
 
+La página explica los componentes de una instrucción, la diferencia entre zero-shot y few-shot, el uso de formatos de salida y los criterios para revisar respuestas. El contexto retoma el alcance y las fuentes del asistente definidos en la semana 1.
+
 ## Evidencias de aprendizaje
 
 - Plantilla de prompt reutilizable.

@@ -21,13 +21,79 @@
     </div>
   </header>
   <main class="contenedor-semana">
-    <section aria-labelledby="titulo-semana">
+    <section class="introduccion-semana mb-5" aria-labelledby="titulo-semana">
       <p class="text-secondary mb-1">Trayecto 1 · Semana 3</p>
-      <h2 class="h3 fw-bold titulo-seccion" id="titulo-semana">Ingeniería de prompts y evaluación básica</h2>
-      <p class="mb-4">Diseño de instrucciones claras y reutilizables, con evaluación de respuestas mediante casos de prueba.</p>
+      <h2 class="h3 fw-bold titulo-seccion" id="titulo-semana">¿Cómo pedir una respuesta clara y comprobar que funciona?</h2>
+      <p class="mb-0">La ingeniería de prompts consiste en expresar con claridad qué debe hacer un modelo, con qué información y en qué formato. Después, sus respuestas se comparan con casos concretos para comprobar si siguen la instrucción, reconocen lo que no saben y respetan los límites definidos.</p>
+      <aside class="distincion-servicio mt-3">
+        <strong>Una instrucción más precisa ayuda, pero no garantiza una respuesta correcta.</strong> Por eso el prompt y la respuesta se revisan juntos: primero se define lo esperado y luego se prueba con ejemplos variados.
+      </aside>
+    </section>
+
+    <section class="mb-5" aria-labelledby="estructura-prompt">
+      <h2 class="h3 fw-bold titulo-seccion" id="estructura-prompt">Qué información hace útil un prompt</h2>
+      <p>La estructura depende de la tarea. Estas piezas ayudan a reducir interpretaciones distintas:</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Quién responde y qué debe hacer</h3>
+            <p class="mb-0">Define el rol cuando aporte contexto y formula una tarea concreta. «Resume los cambios principales» indica mejor el trabajo que «cuéntame sobre este tema».</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Contexto y fuentes</h3>
+            <p class="mb-0">Indica para quién es la respuesta y qué material debe usar. Separar los datos disponibles de lo que falta ayuda a evaluar si la respuesta se apoya en la información correcta.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Límites y datos ausentes</h3>
+            <p class="mb-0">Aclara qué debe evitar y qué hacer si no encuentra una respuesta: reconocer que falta información y no completar los vacíos con suposiciones.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Formato y ejemplos</h3>
+            <p class="mb-0">Pide una forma de salida concreta —por ejemplo, una tabla, tres viñetas o un JSON con claves definidas—. Si también se necesita un patrón o estilo específico, incluye ejemplos de entrada y respuesta.</p>
+          </article>
+        </div>
+      </div>
+      <aside class="idea-clave mt-3">
+        <strong>Zero-shot y few-shot:</strong> zero-shot plantea la tarea sin ejemplos; few-shot incluye algunos ejemplos para mostrar el patrón esperado. Se elige según la tarea, no por la cantidad de texto.
+      </aside>
+      <p class="contenido-semana mt-3 mb-0"><strong>Plantillas reutilizables:</strong> mantienen estables las instrucciones ya probadas y dejan un espacio variable, como <code>{pregunta}</code>, para el contenido de cada consulta.</p>
+    </section>
+
+    <section class="mb-5" aria-labelledby="evaluacion-prompt">
+      <h2 class="h3 fw-bold titulo-seccion" id="evaluacion-prompt">Cómo evaluar la respuesta</h2>
+      <p>Una sola pregunta no muestra si una plantilla es confiable. Se prepara un conjunto de cinco casos con respuestas esperadas, que incluya preguntas frecuentes, una ambigua y otra fuera del alcance.</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Revisar cada resultado</h3>
+            <ul class="mb-0">
+              <li>Que los datos coincidan con el material disponible.</li>
+              <li>Que respete el formato y las restricciones solicitadas.</li>
+              <li>Que reconozca lo que no está informado, sin inventarlo.</li>
+              <li>Que trate con cortesía las preguntas fuera de su alcance.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana limite-modelo h-100">
+            <h3 class="h5 fw-bold">Mantener los casos al comparar</h3>
+            <p class="mb-0">Cuando se modifica una plantilla, se vuelve a probar con los mismos casos. Así se puede comparar si mejoró la precisión, el formato y el manejo de los límites, sin depender de una respuesta que solo suena convincente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="evidencias-semana">
+      <h2 class="h3 fw-bold titulo-seccion" id="evidencias-semana">Evidencias de aprendizaje</h2>
       <article class="contenido-semana">
-        <h3 class="h5 fw-bold text-primary">Evidencias de aprendizaje</h3>
-        <ul class="mb-0"><li>Plantilla de prompt reutilizable.</li><li>Cinco casos de prueba con respuestas esperadas, incluida una pregunta ambigua y una fuera de tema.</li></ul>
+        <p>El trabajo de la semana reúne una plantilla de prompt reutilizable y cinco casos de prueba con sus respuestas esperadas. El conjunto permite revisar tanto las consultas habituales como la ambigüedad, la falta de información y las preguntas fuera del alcance.</p>
+        <p class="mb-0">La propuesta retoma la delimitación del asistente y el uso de fuentes establecidos en la semana 1.</p>
       </article>
     </section>
   </main>
