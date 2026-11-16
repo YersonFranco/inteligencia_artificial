@@ -50,3 +50,39 @@
 }
 
 .lectura-contenido h3 { margin-top: 1rem; }
+
+.actividad-sesion { border-top: 4px solid #1d9a78; }
+
+.numero-actividad {
+  display: inline-block;
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  background: #e7f5f1;
+  color: #176858;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.prompt-actividad {
+  padding: .75rem .9rem;
+  border-left: 3px solid #6750e8;
+  background: #f6f4ff;
+  color: #26345a;
+}
+
+.nota-proposito {
+  padding: .75rem;
+  border-radius: 5px;
+  background: #f1f4f8;
+  color: #46515f;
+  font-size: .93rem;
+}
+
+.preguntas-repaso {
+  padding: 1.1rem 1.1rem 1.1rem 3rem;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 5px #00000018;
+}
+
+.preguntas-repaso li + li { margin-top: .45rem; }
