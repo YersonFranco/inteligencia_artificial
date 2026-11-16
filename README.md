@@ -50,6 +50,6 @@ Abre [index.html](index.html) para acceder a las semanas del trayecto.
     │       ├── index.html
     │       ├── css/
     │       │   └── style.css
-    │       └── riwi_tres_cupos_borrador.txt
+    │       └── registro_tres_cupos.txt
     └── semana_3/
 ```
