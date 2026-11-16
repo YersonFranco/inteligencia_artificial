@@ -12,7 +12,7 @@ El asistente está dirigido a los coders de Van Rossum para consultar temas, hor
 
 ## Sección 3: tarjeta de decisión
 
-La tarjeta analiza el pedido de crear una descripción para un libro cuando solo se conoce el título. Propone solicitar datos verificables antes de generar el texto y explicita el riesgo de inventar información.
+La tarjeta responde al giro final del reto: aparece un libro con solo el título. Distingue esa situación del pedido C, que permite generar una descripción con IA a partir de los datos del libro y revisión humana, y plantea solicitar información verificable antes de redactar.
 
 ## Sección 4: pasaporte del asistente
 
@@ -26,7 +26,7 @@ El flujo organiza la atención de preguntas con reglas, consulta de información
 
 ## Sección 6: bitácora de la feria de las máquinas
 
-Se documentan dos casos del reto: la generación de una explicación a pedido y la aplicación de un descuento mediante una condición fija. Cada registro identifica el mecanismo, la pista del enunciado y un posible error de interpretación.
+Se documentan dos casos del reto en una línea por máquina: la generación de una explicación a pedido y la aplicación de un descuento mediante una condición fija. Cada registro sigue la secuencia caso, mecanismo, pista del enunciado y posible error.
 
 ## Evidencias de aprendizaje
 
