@@ -6,6 +6,10 @@ Distinguir los conceptos fundamentales de inteligencia artificial y delimitar un
 
 El mapa presenta la jerarquía entre inteligencia artificial, aprendizaje automático y aprendizaje profundo, y explica la relación de la IA generativa con estos enfoques. También distingue los algoritmos y las reglas escritas de los sistemas que aprenden a partir de ejemplos.
 
+## Sección 2: caso de uso delimitado
+
+El asistente está dirigido a los coders de Van Rossum para consultar temas, horarios y entregas del entrenamiento desde materiales oficiales. No responde sobre notas, permisos o excepciones ni inventa datos ausentes; cuando no encuentra una respuesta, remite al TL o al coach.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.

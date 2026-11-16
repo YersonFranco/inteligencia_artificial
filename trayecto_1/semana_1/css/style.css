@@ -58,3 +58,19 @@
 @media (max-width: 576px) {
   .mapa-conceptual { padding: 1rem; }
 }
+
+.caso-resumen {
+  padding: 1rem 1.1rem;
+  border-left: 5px solid #1d4ed8;
+  border-radius: 0 6px 6px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px #00000012;
+}
+
+.alcance-incluye {
+  border-top: 4px solid #1d4ed8;
+}
+
+.alcance-limite {
+  border-top: 4px solid #1e3a8a;
+}
