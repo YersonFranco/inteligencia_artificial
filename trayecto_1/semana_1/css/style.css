@@ -9,7 +9,7 @@
 }
 
 .nodo-concepto {
-  height: 100%;
+  height: auto;
   padding: 1rem;
   border: 1px solid #d6deea;
   border-radius: 6px;
@@ -21,11 +21,21 @@
   background-color: #f7f9fd;
 }
 
+.nodo-ia > .row {
+  align-items: stretch;
+}
+
+.nodo-ml,
+.nodo-generativa {
+  height: 100%;
+}
+
 .nodo-ml {
   border-left: 4px solid #1d4ed8;
 }
 
 .nodo-dl {
+  height: auto;
   margin-top: 1rem;
   border-left: 4px solid #6c8fe8;
   background-color: #f5f7fa;
