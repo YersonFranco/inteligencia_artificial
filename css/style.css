@@ -1,0 +1,141 @@
+:root {
+  --bs-primary: #1d4ed8;
+  --bs-primary-rgb: 29, 78, 216;
+}
+
+html { height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #252a31;
+}
+
+.bg-oscuro {
+  background-color: #1e3a8a;
+}
+
+.site-header-brand {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.riwi-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 124px;
+  height: 62px;
+  object-fit: contain;
+  transform: translateY(-65%);
+}
+
+.contenido-principal {
+  flex: 1;
+  width: min(92%, 1140px);
+  margin: 28px auto 36px;
+}
+
+.contenedor-semana {
+  flex: 1;
+  width: min(92%, 900px);
+  margin: 28px auto 36px;
+}
+
+.titulo-seccion {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #1d4ed8;
+  color: #1d4ed8;
+}
+
+.icono-semana {
+  display: block;
+  width: 160px;
+  height: 150px;
+  margin: 0 auto 12px;
+  object-fit: contain;
+}
+
+.tarjeta-semana {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-semana .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.tarjeta-semana .btn {
+  margin-top: auto;
+}
+
+.contenido-semana {
+  padding: 18px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px #00000018;
+}
+
+.enlace-semana {
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.enlace-semana:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+.pie {
+  margin-top: auto;
+  padding: 16px 16px 14px;
+  border-top: 4px solid #3156a9;
+  background-color: #1e3a8a;
+  color: #fff;
+  text-align: center;
+}
+
+.pie p { margin: 0; }
+
+.pie small { color: #dce5ff; }
+
+.btn-primary {
+  --bs-btn-bg: #1d4ed8;
+  --bs-btn-border-color: #1d4ed8;
+  --bs-btn-hover-bg: #1e3a8a;
+  --bs-btn-hover-border-color: #1e3a8a;
+  --bs-btn-active-bg: #1e3a8a;
+  --bs-btn-active-border-color: #1e3a8a;
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible,
+.enlace-semana:focus-visible {
+  outline: 3px solid #f3c969;
+  outline-offset: 3px;
+}
+
+@media (max-width: 576px) {
+  .riwi-logo {
+    position: static;
+    display: block;
+    width: 112px;
+    height: 56px;
+    margin: 0 auto 12px;
+    transform: none;
+  }
+
+  .contenido-principal,
+  .contenedor-semana {
+    width: 92%;
+  }
+}
