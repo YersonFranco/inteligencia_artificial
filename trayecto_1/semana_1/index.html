@@ -152,8 +152,23 @@
     </section>
     <section class="mt-5" aria-labelledby="flujo-title">
       <p class="text-secondary mb-1">Semana 1 · Sección 5</p>
-      <h2 class="h3 fw-bold titulo-seccion" id="flujo-title">Flujo y prueba de límites</h2>
-      <p>El flujo muestra cómo se atiende una pregunta desde su recepción hasta la respuesta o el paso a revisión humana.</p>
+      <h2 class="h3 fw-bold titulo-seccion" id="flujo-title">Boceto, flujo y prueba cruzada</h2>
+      <p>El boceto presenta la pantalla inicial del asistente. El flujo describe cómo pasa de la consulta a una respuesta sustentada o a revisión humana.</p>
+      <article class="contenido-semana boceto-asistente" aria-label="Boceto de la pantalla del asistente Brújula Van Rossum">
+        <div class="boceto-cabecera">
+          <div class="marca-asistente" aria-hidden="true">BV</div>
+          <div>
+            <p class="small mb-1">Asistente de conocimiento · Van Rossum</p>
+            <h3 class="h5 fw-bold mb-0">Brújula Van Rossum</h3>
+          </div>
+        </div>
+        <p class="mb-3">Consulta temas, horarios y entregas del entrenamiento con apoyo de los materiales oficiales.</p>
+        <div class="campo-boceto" aria-label="Campo de ejemplo para escribir una consulta">Escribe tu pregunta sobre el entrenamiento…</div>
+        <div class="boceto-pie">
+          <small>Si no encuentra el dato en las fuentes, te orientará con quién confirmarlo.</small>
+          <span class="btn btn-primary" aria-hidden="true">Consultar</span>
+        </div>
+      </article>
       <ol class="flujo-asistente" aria-label="Flujo de atención del asistente">
         <li><span class="badge etiqueta-concepto">R · Regla</span><strong>Recibir la pregunta</strong><span>Identificar si trata sobre temas, horarios o entregas del entrenamiento.</span></li>
         <li><span class="badge etiqueta-concepto">R · Regla</span><strong>Comprobar el alcance</strong><span>Si pide notas, permisos o excepciones, no tomar la decisión y remitir al TL o al coach.</span></li>
@@ -161,24 +176,27 @@
         <li><span class="badge etiqueta-concepto">M · Modelo</span><strong>Preparar una respuesta sustentada</strong><span>Explicar el dato encontrado con claridad, sin añadir información que la fuente no confirme.</span></li>
         <li><span class="badge etiqueta-concepto">H · Revisión humana</span><strong>Resolver lo que falta</strong><span>Si la fuente no responde o deja dudas, reconocer el límite y orientar al TL o al coach.</span></li>
       </ol>
-      <h3 class="h5 fw-bold text-primary mt-4">Prueba cruzada</h3>
+      <h3 class="h5 fw-bold text-primary mt-4">Preguntas para la prueba cruzada</h3>
       <div class="row g-3">
         <div class="col-md-6">
           <article class="contenido-semana h-100 prueba-limite">
-            <span class="badge text-bg-secondary mb-2">Fuera del alcance</span>
-            <p><strong>Pregunta:</strong> «¿Qué nota voy a sacar en el módulo?»</p>
-            <p class="mb-0"><strong>Respuesta esperada:</strong> no predecir ni asignar notas; orientar la consulta al TL o al coach.</p>
+            <span class="badge text-bg-secondary mb-2">Fuera del tema</span>
+            <p><strong>Pregunta:</strong> «¿Cómo preparo arroz con leche?»</p>
+            <p class="mb-0"><strong>Respuesta esperada:</strong> aclarar que el asistente ayuda con temas, horarios y entregas de Riwi, y no inventar una respuesta fuera de ese propósito.</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="contenido-semana h-100 prueba-limite">
             <span class="badge text-bg-warning mb-2">Sin información suficiente</span>
             <p><strong>Pregunta:</strong> «¿A qué hora exacta vence la entrega?»</p>
-            <p class="mb-0"><strong>Respuesta esperada:</strong> si las fuentes consultadas no publican la hora, no inferirla; indicar que no puede confirmarse y remitir al TL o al coach.</p>
+            <p class="mb-0"><strong>Respuesta esperada:</strong> si las guías o el calendario no indican la hora, no inferirla; decir que no puede confirmarse y remitir al TL o al coach.</p>
           </article>
         </div>
       </div>
-      <p class="frase-asistente mt-3 mb-0">Nuestro asistente ayuda a encontrar información oficial sobre temas, horarios y entregas, pero todavía no debe asignar notas ni aprobar permisos o excepciones.</p>
+      <article class="sugerencia-prueba mt-3">
+        <strong>Sugerencia de mejora:</strong> mostrar junto a cada respuesta el nombre del material consultado y su fecha de actualización, para que el coder pueda comprobar la vigencia de la información.
+      </article>
+      <p class="frase-asistente mt-3 mb-0">Nuestro asistente ayuda a encontrar información oficial sobre temas, horarios y entregas, pero todavía no debe responder consultas ajenas al entrenamiento ni tomar decisiones sobre notas, permisos o excepciones.</p>
     </section>
     <section class="mt-5" aria-labelledby="bitacora-title">
       <p class="text-secondary mb-1">Semana 1 · Sección 6</p>

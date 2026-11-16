@@ -22,7 +22,7 @@ El pasaporte define el problema que atiende Brújula Van Rossum, el tipo de preg
 
 ## Sección 5: flujo y prueba de límites
 
-El flujo organiza la atención de preguntas con reglas, consulta de información oficial y revisión humana. La prueba cruzada incluye una solicitud fuera del alcance y una pregunta que no puede responderse con seguridad sin evidencia en las fuentes.
+El boceto presenta la pantalla inicial de Brújula Van Rossum; el flujo organiza la atención en cinco pasos con reglas, consulta de información oficial y revisión humana. Se incluyen dos preguntas para la prueba cruzada y una sugerencia para identificar las fuentes y su vigencia en cada respuesta.
 
 ## Sección 6: bitácora de la feria de las máquinas
 
