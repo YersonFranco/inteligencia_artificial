@@ -40,6 +40,10 @@ El ejercicio reúne ejemplos deseados y no deseados y revisa seis predicciones. 
 
 Las tareas del asistente se organizan según correspondan a una regla, a un modelo o a una persona. La clasificación distingue la búsqueda de datos publicados, la elaboración de explicaciones y las decisiones que requieren revisión humana.
 
+## Sección 10: prueba cruzada
+
+Se proponen casos para comprobar el límite temático, la respuesta ante información ausente y una regla concreta que puede mejorar otro asistente: derivar al coach las consultas sobre notas.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
@@ -49,6 +53,7 @@ Las tareas del asistente se organizan según correspondan a una regla, a un mode
 - Ejecución del procedimiento de ordenamiento con tres entradas.
 - Ejercicio de clasificación de mensajes con revisión de errores.
 - Clasificación R/M/H de las tareas del asistente.
+- Casos y sugerencia para la prueba cruzada de asistentes.
 
 [Ver el mapa de conceptos](index.html)
 [Volver al portafolio](../../index.html)

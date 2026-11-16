@@ -220,6 +220,13 @@
 .rmh-modelo { border-top-color: #6750e8; }
 .rmh-humano { border-top-color: #1d9a78; }
 
+.caso-prueba-cruzada { border-top: 4px solid #1d4ed8; }
+
+.nota-prueba-cruzada {
+  color: #46515f;
+  font-size: .92rem;
+}
+
 .tabla-filtro {
   padding: .75rem 1rem;
 }
