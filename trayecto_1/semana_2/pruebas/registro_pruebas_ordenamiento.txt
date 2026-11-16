@@ -1,0 +1,33 @@
+REGISTRO DE PRUEBAS — ORDENAMIENTO DE TRES NÚMEROS
+Fecha de generación: 16 de noviembre de 2026 a las 4:51 p. m.
+Entorno: práctica interactiva en el navegador.
+Procedimiento: comparar las posiciones 1–2, luego 2–3 y finalmente 1–2; intercambiar solo cuando el valor izquierdo es mayor.
+
+1. Desordenados
+   Entrada: 7, 2, 5
+   Esperado: 2, 5, 7
+   Obtenido: 2, 5, 7
+   Estado: Correcto
+2. Orden inverso
+   Entrada: 9, 5, 1
+   Esperado: 1, 5, 9
+   Obtenido: 1, 5, 9
+   Estado: Correcto
+3. Valores repetidos
+   Entrada: 5, 1, 5
+   Esperado: 1, 5, 5
+   Obtenido: 1, 5, 5
+   Estado: Correcto
+4. Números negativos
+   Entrada: -3, 5, -1
+   Esperado: -3, -1, 5
+   Obtenido: -3, -1, 5
+   Estado: Correcto
+5. Todos iguales
+   Entrada: 4, 4, 4
+   Esperado: 4, 4, 4
+   Obtenido: 4, 4, 4
+   Estado: Correcto
+
+Resumen: 5 de 5 casos correctos.
+El archivo ordenar.py contiene la versión equivalente del algoritmo en Python.

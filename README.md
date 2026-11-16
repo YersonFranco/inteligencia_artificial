@@ -46,6 +46,8 @@ Abre [index.html](index.html) para acceder a las semanas del trayecto.
     │   │   └── ordenar.js
     │   ├── python/
     │   │   └── ordenar.py
+    │   ├── pruebas/
+    │   │   └── registro_pruebas_ordenamiento.txt
     │   └── tres_cupos/
     │       ├── index.html
     │       ├── css/
