@@ -26,11 +26,14 @@
       <p class="text-secondary mb-1">Inteligencia artificial · Trayecto 1</p>
       <h2 class="h3 fw-bold titulo-seccion">¿Qué ocurre entre tu pregunta y la respuesta?</h2>
       <p class="mb-0">Un modelo de lenguaje no busca una respuesta completa dentro de una lista. Procesa el texto y va construyendo una continuación con la información que tiene disponible.</p>
+      <aside class="distincion-servicio mt-3">
+        <strong>Aplicación y modelo son cosas distintas.</strong> El servicio es la aplicación con la que conversas; el modelo es el sistema que procesa tu solicitud. Un mismo servicio puede ofrecer varios modelos y herramientas, como búsqueda o lectura de archivos.
+      </aside>
     </header>
 
     <section class="mb-5" aria-labelledby="recorrido-title">
       <h2 class="h3 fw-bold titulo-seccion" id="recorrido-title">Del mensaje a una respuesta</h2>
-      <p>Podemos imaginarlo como un recorrido: cada etapa prepara la siguiente.</p>
+      <p>LLM significa «modelo de lenguaje grande». Podemos imaginar su trabajo como un recorrido: cada etapa prepara la siguiente.</p>
       <div class="row g-3">
         <div class="col-md-6">
           <article class="contenido-semana etapa-llm h-100">
@@ -66,6 +69,25 @@
       </aside>
     </section>
 
+    <section class="mb-5" aria-labelledby="entrenamiento-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="entrenamiento-title">Aprender el modelo y usarlo son momentos distintos</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Entrenamiento</h3>
+            <p class="mb-0">El modelo procesa muchísimos ejemplos y ajusta sus parámetros para aprender patrones. Es una etapa de construcción que requiere datos y capacidad de cómputo.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="contenido-semana h-100">
+            <h3 class="h5 fw-bold text-primary">Inferencia</h3>
+            <p class="mb-0">Es cuando usamos el modelo ya entrenado para responder. Darle una instrucción o un documento puede cambiar la respuesta de esa conversación, pero no significa que lo hayamos vuelto a entrenar.</p>
+          </article>
+        </div>
+      </div>
+      <p class="nota-modelos mt-3 mb-0"><strong>El contexto también tiene un límite.</strong> El modelo trabaja con una cantidad máxima de texto: puede incluir tu pregunta, mensajes previos y documentos disponibles. Añadir más información no siempre ayuda; importa que sea relevante y clara.</p>
+    </section>
+
     <section class="mb-5" aria-labelledby="tipos-modelo-title">
       <h2 class="h3 fw-bold titulo-seccion" id="tipos-modelo-title">Tres formas de describir un modelo</h2>
       <p>Estas expresiones hablan de aspectos diferentes. Un mismo modelo puede cumplir más de una descripción.</p>
@@ -90,6 +112,7 @@
         </div>
       </div>
       <p class="nota-modelos mt-3 mb-0">Por ejemplo, usar un modelo mediante una página web o una API no permite concluir por sí solo si es de frontera. Para ejecutarlo en un equipo propio también hacen falta una licencia compatible y recursos suficientes.</p>
+      <p class="nota-investigacion mt-3 mb-0"><strong>Una idea que se investiga:</strong> el aprendizaje federado busca entrenar modelos usando datos que permanecen en distintos dispositivos. Es una forma de explorar la colaboración y la privacidad; no es una garantía automática de que los datos estén protegidos.</p>
     </section>
 
     <section class="mb-5" aria-labelledby="uso-title">
@@ -114,6 +137,32 @@
       </div>
     </section>
 
+    <section class="mb-5" aria-labelledby="practica-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="practica-title">Práctica: ordenar tres números con Python</h2>
+      <p>El mismo principio de comparar y cambiar de lugar se puede convertir en un programa. Escribe tres enteros y ejecútalo aquí; el navegador carga Python para correr el algoritmo.</p>
+      <form class="contenido-semana" id="formulario-ordenamiento">
+        <div class="row g-3">
+          <div class="col-sm-4">
+            <label class="form-label fw-semibold" for="numero-1">Primer número</label>
+            <input class="form-control" id="numero-1" name="numero-1" type="number" step="1" required>
+          </div>
+          <div class="col-sm-4">
+            <label class="form-label fw-semibold" for="numero-2">Segundo número</label>
+            <input class="form-control" id="numero-2" name="numero-2" type="number" step="1" required>
+          </div>
+          <div class="col-sm-4">
+            <label class="form-label fw-semibold" for="numero-3">Tercer número</label>
+            <input class="form-control" id="numero-3" name="numero-3" type="number" step="1" required>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-3" id="ejecutar-ordenamiento" type="submit">Ordenar con Python</button>
+        <output class="resultado-python d-block mt-3" id="resultado-ordenamiento" aria-live="polite">El intérprete Python se prepara al ejecutar el ejercicio.</output>
+      </form>
+
+      <p class="contenido-semana mt-3 mb-0">El formulario ejecuta el mismo archivo <a href="python/ordenar.py" download>ordenar.py</a> que puedes descargar y correr en tu equipo.</p>
+      <p class="nota-modelos mt-3 mb-0">La primera carga necesita internet para obtener Python en el navegador. Si abres los archivos desde tu equipo, usa un servidor local para que la página pueda cargar el archivo `.py`. Los números se procesan en el navegador.</p>
+    </section>
+
     <aside class="cierre-semana mb-4">
       <h2 class="h5 fw-bold">La idea para llevar</h2>
       <p class="mb-0">Un modelo produce una continuación a partir del texto y el contexto disponibles. Puede ser útil, pero entender cómo llegó a su respuesta nos ayuda a pedir mejor y a verificar lo importante.</p>
@@ -121,5 +170,7 @@
   </main>
 
   <footer class="pie text-center text-white"><p class="mb-0">&copy; 2026 Yerson Franco</p></footer>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.29.2/full/pyodide.js"></script>
+  <script src="js/ejecutar_python.js"></script>
 </body>
 </html>
