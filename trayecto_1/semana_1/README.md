@@ -22,7 +22,7 @@ El pasaporte define el problema que atiende Brújula Van Rossum, el tipo de preg
 
 ## Sección 5: flujo y prueba de límites
 
-El boceto presenta la pantalla inicial de Brújula Van Rossum; el flujo organiza la atención en cinco pasos con reglas, consulta de información oficial y revisión humana. Se incluyen dos preguntas para la prueba cruzada y una sugerencia para identificar las fuentes y su vigencia en cada respuesta.
+El boceto presenta la pantalla inicial de Brújula Van Rossum; el flujo organiza la atención en cinco pasos R/M/H. Se incluyen dos preguntas para la prueba cruzada y una sugerencia para identificar las fuentes y su vigencia en cada respuesta.
 
 ## Sección 6: bitácora de la feria de las máquinas
 
@@ -36,6 +36,10 @@ Se registra la ejecución literal del procedimiento con la entrada inicial, un c
 
 El ejercicio reúne ejemplos deseados y no deseados y revisa seis predicciones. Destaca el falso positivo que produce una regla basada solo en ofertas, la importancia de verificar el remitente y el contexto, y la revisión humana cuando el filtro se equivoca.
 
+## Sección 9: reto de clase R, M o H
+
+Las tareas del asistente se organizan según correspondan a una regla, a un modelo o a una persona. La clasificación distingue la búsqueda de datos publicados, la elaboración de explicaciones y las decisiones que requieren revisión humana.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
@@ -44,6 +48,7 @@ El ejercicio reúne ejemplos deseados y no deseados y revisa seis predicciones. 
 - Dos entradas de bitácora del reto «La feria de las máquinas».
 - Ejecución del procedimiento de ordenamiento con tres entradas.
 - Ejercicio de clasificación de mensajes con revisión de errores.
+- Clasificación R/M/H de las tareas del asistente.
 
 [Ver el mapa de conceptos](index.html)
 [Volver al portafolio](../../index.html)
