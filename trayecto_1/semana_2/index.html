@@ -21,14 +21,69 @@
     </div>
   </header>
   <main class="contenedor-semana">
-    <section aria-labelledby="titulo-semana">
+    <section class="mb-5" aria-labelledby="titulo-semana">
       <p class="text-secondary mb-1">Trayecto 1 · Semana 2</p>
       <h2 class="h3 fw-bold titulo-seccion" id="titulo-semana">Modelos fundacionales, LLM y Transformer</h2>
-      <p class="mb-4">Funcionamiento conceptual de los modelos generativos y revisión de soluciones algorítmicas con casos de prueba.</p>
-      <article class="contenido-semana">
-        <h3 class="h5 fw-bold text-primary">Evidencias de aprendizaje</h3>
-        <ul class="mb-0"><li>Algoritmo de ordenamiento en Python o PSeInt.</li><li>Registro de pruebas y explicación breve de la solución elegida.</li></ul>
+      <p>Recorrido conceptual por la generación de respuestas: del texto a los tokens, el contexto y los límites que debemos revisar.</p>
+      <article class="mision-semana">
+        <strong>Al terminar podrás:</strong> explicar de forma conceptual cómo funcionan los modelos generativos modernos y reconocer sus capacidades y límites.
       </article>
+    </section>
+    <section class="mb-5" aria-labelledby="conceptos-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="conceptos-title">Conceptos clave</h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Servicio y modelo</h3><p class="mb-0">El servicio es la aplicación que usas; el modelo es uno de los componentes que procesa la solicitud. Un servicio puede ofrecer varios modelos y herramientas.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Modelo fundacional</h3><p class="mb-0">Sirve como base para distintas tareas, como explicar un concepto, traducir o proponer código.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">LLM</h3><p class="mb-0">Sigla de modelo de lenguaje grande: procesa secuencias de tokens y puede generar texto a partir del contexto recibido.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Token</h3><p class="mb-0">Unidad de texto que puede ser una palabra, parte de una palabra o un signo. La división depende del tokenizador.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Atención</h3><p class="mb-0">Componente del Transformer que relaciona representaciones de distintas posiciones del contexto mediante operaciones numéricas.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="contenido-semana concepto-llm h-100"><h3 class="h5 fw-bold">Multimodalidad</h3><p class="mb-0">Algunos modelos pueden procesar o combinar texto, imágenes y audio.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="mb-5" aria-labelledby="lectura-title">
+      <h2 class="h3 fw-bold titulo-seccion" id="lectura-title">Lee el tema por partes</h2>
+      <p class="text-secondary">Tres partes · aproximadamente 3 minutos de lectura</p>
+      <details class="contenido-semana lectura-parte mb-3" open>
+        <summary><span class="numero-parte">1</span><span><strong>Del texto a los tokens</strong><small>Incluye: predecir el siguiente token y atención</small></span></summary>
+        <div class="lectura-contenido">
+          <p>Un tokenizador divide el texto en unidades y les asigna identificadores. Una palabra puede convertirse en uno o varios tokens; por eso los costos, los límites y la ventana de contexto suelen medirse en tokens y no en palabras.</p>
+          <p>Los identificadores se transforman en vectores, representaciones numéricas aprendidas que se combinan con la posición de cada token. Durante la generación, el modelo calcula puntuaciones para posibles tokens siguientes; softmax puede convertirlas en probabilidades. Estas describen continuaciones posibles, no la certeza de que una afirmación sea verdadera. Un LLM por sí solo no consulta una base de verdades y puede producir información inventada.</p>
+          <p>La temperatura modifica la distribución usada para seleccionar tokens: puede aumentar o reducir la variedad, pero no es un control directo de exactitud. Después de elegir un token, el modelo lo añade al contexto y repite el proceso.</p>
+          <h3 class="h5 text-primary">La atención en el Transformer</h3>
+          <p class="mb-0">La atención relaciona partes del contexto. En «Necesito un banco para sentarme» y «Necesito un banco para retirar dinero», las palabras que rodean a «banco» aportan relaciones distintas. No es una persona que decide dónde mirar: es un mecanismo numérico. En un modelo generativo causal, cada posición usa el contexto anterior disponible, no tokens futuros que aún no se han generado.</p>
+        </div>
+      </details>
+      <details class="contenido-semana lectura-parte mb-3">
+        <summary><span class="numero-parte">2</span><span><strong>Modelos fundacionales, de frontera y de pesos abiertos</strong><small>Incluye: multimodalidad y una línea de investigación</small></span></summary>
+        <div class="lectura-contenido">
+          <p>Son características distintas y no excluyentes. Un modelo fundacional sirve de base para muchas tareas; uno de frontera destaca entre los sistemas más avanzados en ciertas capacidades; uno de pesos abiertos permite acceder a sus parámetros entrenados bajo una licencia. Un mismo modelo puede reunir las tres características: usarlo por API no determina si es de frontera.</p>
+          <p>Que los pesos sean abiertos no significa automáticamente que el código sea abierto ni que el modelo sea mejor o peor.</p>
+          <p>Algunos modelos con pesos disponibles pueden ejecutarse en un equipo o servidor propio, según la licencia y los recursos necesarios. Ejecutarlos localmente no garantiza por sí solo la privacidad: también importan la configuración, el acceso a los datos y la seguridad del equipo.</p>
+          <p>Los modelos multimodales combinan modalidades como texto, imagen y audio. El aprendizaje federado es una línea de investigación que permite entrenar modelos con datos que permanecen en distintos dispositivos; en esta sesión se presenta como concepto, no como implementación.</p>
+          <p class="mb-0">La disponibilidad de modelos, servicios y licencias puede variar. Conviene revisar las condiciones vigentes antes de elegir una herramienta.</p>
+        </div>
+      </details>
+      <details class="contenido-semana lectura-parte">
+        <summary><span class="numero-parte">3</span><span><strong>Capacidades y límites</strong><small>Qué hace bien y qué debemos comprobar</small></span></summary>
+        <div class="lectura-contenido">
+          <p>Un LLM puede resumir, traducir, redactar borradores, explicar código y responder en el formato solicitado. También puede inventar datos o fuentes, reflejar sesgos, desconocer sucesos posteriores a su fecha de corte y responder de forma distinta a la misma pregunta.</p>
+          <p>Entrenamiento e inferencia son procesos distintos. En inferencia se usan parámetros ya entrenados para procesar el contexto; añadir una instrucción o documento puede cambiar la respuesta sin modificar esos parámetros. La memoria de una aplicación y el uso posterior de conversaciones para entrenamiento también son procesos separados.</p>
+          <p>Generar código no significa ejecutarlo. Para probarlo, el servicio debe disponer de una herramienta y usarla. Del mismo modo, una respuesta en un chat no demuestra que se haya buscado en internet: hay que comprobar si se usó búsqueda y abrir las fuentes.</p>
+          <p class="mb-0">El contexto puede incluir instrucciones, mensajes anteriores, documentos y resultados de herramientas, y tiene un límite. Más texto no garantiza una mejor respuesta: importan la relevancia, la consistencia y que el propósito y los criterios estén claros.</p>
+        </div>
+      </details>
     </section>
   </main>
   <footer class="pie text-center text-white"><p class="mb-0">&copy; 2026 Yerson Franco</p></footer>
