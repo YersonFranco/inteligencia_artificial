@@ -168,18 +168,18 @@
         <output class="resultado-ordenamiento d-block mt-3" id="resultado-ordenamiento" aria-live="polite">El resultado aparecerá aquí.</output>
       </form>
 
+      <article class="contenido-semana mt-3">
+        <h3 class="h5 fw-bold">¿Por qué se hacen tres comparaciones?</h3>
+        <p class="mb-0">Para ordenar tres valores basta comparar primero el primero con el segundo, luego el segundo con el tercero y, al final, volver a comparar el primero con el segundo. Si un par está al revés, se intercambia. La última comparación deja también en orden los dos primeros. Así se evita usar listas, ciclos o una función de ordenamiento que oculte el procedimiento.</p>
+      </article>
+
       <div class="contenido-semana mt-3">
-        <h3 class="h5 fw-bold">Casos para comprobar</h3>
+        <h3 class="h5 fw-bold">Registro de pruebas</h3>
+        <p>La práctica interactiva ejecuta estos cinco casos al abrir la página. Se comprueba el resultado obtenido frente al esperado.</p>
         <div class="table-responsive">
           <table class="table table-sm table-bordered align-middle mb-0">
-            <thead><tr><th scope="col">Entrada</th><th scope="col">Resultado esperado</th></tr></thead>
-            <tbody>
-              <tr><td>7, 2, 5</td><td>2, 5, 7</td></tr>
-              <tr><td>9, 5, 1</td><td>1, 5, 9</td></tr>
-              <tr><td>5, 1, 5</td><td>1, 5, 5</td></tr>
-              <tr><td>-3, 5, -1</td><td>-3, -1, 5</td></tr>
-              <tr><td>4, 4, 4</td><td>4, 4, 4</td></tr>
-            </tbody>
+            <thead><tr><th scope="col">Caso</th><th scope="col">Entrada</th><th scope="col">Esperado</th><th scope="col">Obtenido</th><th scope="col">Estado</th></tr></thead>
+            <tbody id="registro-pruebas"></tbody>
           </table>
         </div>
       </div>
