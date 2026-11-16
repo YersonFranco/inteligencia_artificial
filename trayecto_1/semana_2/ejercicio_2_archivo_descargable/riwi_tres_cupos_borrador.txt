@@ -1,0 +1,108 @@
+ACTIVIDAD: TRES CUPOS, OCHO ESTUDIANTES
+
+CASO
+
+En un curso de programación hay ocho estudiantes y solo tres cupos disponibles para un programa de acompañamiento. El equipo debe usar una IA para proponer quiénes deberían recibirlos.
+
+Las notas van de 0 a 5 y se aprueba con 3.
+
+Estudiante | Nota actual | Asistencia | Situación
+Ana | 2,1 | 95 % | Estudia por su cuenta, pero sigue sin comprender varios conceptos básicos.
+Bruno | 2,8 | 65 % | Sus turnos de trabajo coinciden con algunas clases.
+Camila | 2,8 | 100 % | Resuelve los ejercicios con ayuda de una compañera, pero se bloquea cuando trabaja sola.
+Diego | 1,9 | 60 % | Ha faltado para cuidar a un familiar. Quiere continuar, pero se siente muy atrasado.
+Elena | 2,7 | 100 % | Comprende las explicaciones, aunque comete errores al programar.
+Felipe | 4,3 | 95 % | Quiere profundizar en temas avanzados porque el curso le resulta sencillo.
+Gabriela | 2,6 | 80 % | Comparte computador en casa y casi no puede practicar.
+Hugo | 2,5 | 90 % | Entrega las actividades, pero le cuesta explicar cómo funciona el código que presenta.
+
+ELECCIÓN INDIVIDUAL
+
+Selección: Ana, Camila y Hugo.
+Criterio: priorizar a quienes necesitan más apoyo para comprender o explicar el código y trabajar con autonomía.
+
+PRIMERA CONSULTA A CLAUDE
+
+Instrucción:
+Selecciona a los tres estudiantes que más necesitan el acompañamiento. Justifica cada elección y explica por qué dejaste fuera a los demás.
+
+Respuesta completa:
+
+Selección de los tres cupos
+
+Criterio: priorizo a quien tiene la mayor brecha o riesgo de abandonar, y a quien el acompañamiento sí puede ayudar a mejorar. La nota por sí sola no basta, porque varios estudiantes tienen notas parecidas por razones muy distintas.
+
+Los tres seleccionados
+
+1. Diego (1,9 · 60 %)
+Tiene la nota más baja y la asistencia más baja, así que es quien corre más riesgo de abandonar. Su causa es externa (cuida a un familiar), no falta de interés, y él quiere continuar. Que se sienta «muy atrasado» es justo lo que un acompañamiento puede atender, para ponerlo al día y evitar que se rinda.
+
+2. Ana (2,1 · 95 %)
+Tiene la segunda nota más baja y falla en conceptos básicos, lo que complica todo lo que viene después. Su compromiso es alto (95 % de asistencia y estudia por su cuenta), pero el esfuerzo solo no le está funcionando. Necesita que alguien detecte qué está entendiendo mal y se lo explique de otra forma.
+
+3. Gabriela (2,6 · 80 %)
+Su problema es la falta de práctica: comparte computador y casi no puede practicar. En programación eso frena el avance aunque entienda la teoría. El acompañamiento puede darle espacios de práctica guiada, que es justo lo que le falta.
+
+Por qué dejó fuera a los demás
+
+- Camila (2,8 · 100 %): Estaba entre los casos más cercanos. Tiene muy buena asistencia, ya cuenta con el apoyo de una compañera y está cerca de aprobar. Su reto es la autonomía, que puede trabajarse con ejercicios individuales.
+- Hugo (2,5 · 90 %): También fue un caso cercano. Su problema (no poder explicar su código) es importante, pero se puede trabajar con ejercicios de explicación oral. Si le sobrara un cupo, sería el siguiente.
+- Elena (2,7 · 100 %): Entiende las explicaciones y asiste siempre. Sus errores de programación se corrigen con práctica y retroalimentación.
+- Bruno (2,8 · 65 %): Su problema es de horario, no de comprensión. Más que acompañamiento, necesita flexibilidad (grabaciones, material asincrónico). Si estas opciones no existen, su riesgo aumenta.
+- Felipe (4,3 · 95 %): No necesita acompañamiento para aprobar. Lo suyo es enriquecimiento (retos avanzados), que es otro tipo de programa.
+
+Advertencia:
+Con solo estos datos, la decisión tiene límites. Las notas y la asistencia son una foto de un momento, y las descripciones están resumidas. Antes de confirmar, un docente debería hablar con los estudiantes, sobre todo con los casos cercanos (Camila, Hugo y Bruno). Una IA puede proponer, pero la decisión final debe ser humana.
+
+OBSERVACIONES DE LA PRIMERA RESPUESTA
+
+Claude interpretó que necesitaban acompañamiento quienes tenían dificultades académicas y podían beneficiarse de apoyo. Priorizó las notas, la asistencia y las situaciones personales, especialmente en los casos de Diego y Gabriela. Sin embargo, asumió que Diego podría abandonar y propuso soluciones para Bruno que no aparecen en la información. La respuesta no pidió aclarar el propósito ni las condiciones del programa, datos que podrían cambiar la selección.
+
+SEGUNDA CONSULTA A CLAUDE
+
+Programa asignado al equipo: Programa B — Continuidad en el curso.
+
+Contexto agregado:
+Ocho semanas de acompañamiento para favorecer la continuidad y evitar el abandono. Incluye tutorías semanales con horarios flexibles y seis horas adicionales de acceso a computador por semana. Los ocho estudiantes pueden asistir al menos a uno de los horarios. El programa no incluye apoyo económico ni préstamo de computadores para la casa. El repaso para el examen está abierto a todos y es independiente de estos tres cupos.
+
+Instrucción:
+En una conversación nueva, usar la misma instrucción de la primera ronda y añadir la información del Programa B.
+
+Respuesta completa:
+
+Selección de los tres cupos (Programa B: Continuidad en el curso)
+
+Criterio: con este programa, priorizo a quien está en mayor riesgo de abandonar el curso y a quien las tutorías flexibles y las seis horas de computador pueden ayudar de verdad. El repaso del examen ya está abierto a todos, así que no lo uso para decidir.
+
+Los tres seleccionados
+
+1. Diego (1,9 · 60 %)
+Tiene la nota y la asistencia más bajas, así que es quien más riesgo tiene de abandonar. Faltó por cuidar a un familiar, y los horarios flexibles le permiten asistir sin dejar esa responsabilidad. Quiere continuar, pero se siente muy atrasado: ocho semanas de tutorías le dan tiempo real para ponerse al día.
+
+2. Ana (2,1 · 95 %)
+Es la segunda nota más baja y tiene vacíos en conceptos básicos, que afectan todo lo que viene después. Estudiar sola no le está funcionando. Con tutorías semanales durante ocho semanas, alguien puede encontrar qué entiende mal y explicárselo de otra forma, algo que dos horas de repaso no logran.
+
+3. Gabriela (2,6 · 80 %)
+Su obstáculo principal es la falta de práctica, porque comparte computador en casa. Las seis horas semanales de acceso a computador responden directamente a ese problema. Aunque el programa no presta equipos para la casa, esas horas le dan práctica regular que hoy no tiene. Además, las tutorías le permiten no quedarse atrás mientras tanto.
+
+Por qué dejó fuera a los demás
+
+- Bruno (2,8 · 65 %): Fue el caso más cercano. Su problema es de horario, y los horarios flexibles lo resuelven, pero con una condición: el programa garantiza que puede asistir al menos a uno. Su nota está cerca de 3 y su comprensión no parece ser el problema. Sin embargo, su asistencia del 65 % es la segunda más baja, así que es el primero a vigilar y el siguiente si se libera un cupo.
+- Hugo (2,5 · 90 %): Entrega las actividades y asiste bien. Su dificultad (explicar su código) se puede trabajar con práctica de explicación oral y el repaso abierto. No tiene riesgo claro de abandono.
+- Camila (2,8 · 100 %): Tiene asistencia perfecta y apoyo de una compañera. Su reto es la autonomía, que puede trabajar con ejercicios individuales. Tiene bajo riesgo de abandono.
+- Elena (2,7 · 100 %): Comprende las explicaciones y asiste siempre. Sus errores mejoran con práctica y retroalimentación.
+- Felipe (4,3 · 95 %): Aprueba con holgura y no está en riesgo. Necesita retos avanzados, que no son el objetivo de este programa.
+
+Cambio frente a la primera ronda:
+La selección es la misma (Diego, Ana y Gabriela), pero ahora la justificación es más sólida: los horarios flexibles y las horas de computador del Programa B responden a las barreras concretas de Diego y Gabriela. Bruno subió en mi lista de espera, porque ahora su problema de horario sí tiene solución.
+
+Advertencia:
+Los datos son una foto de un momento y las descripciones están resumidas. Antes de confirmar, un docente debería hablar con Bruno, Hugo y Camila, que son los casos más cercanos. La IA propone, pero la decisión final debe ser humana.
+
+COMPARACIÓN DE LAS DOS RESPUESTAS
+
+Claude mantuvo a Diego, Ana y Gabriela en ambas rondas. Con el Programa B, relacionó mejor su selección con las ocho semanas de acompañamiento, los horarios flexibles y el acceso adicional a computadores. También señaló a Bruno como el caso más cercano. Algunas afirmaciones, como que Diego está en riesgo de abandonar o que Bruno no tiene dificultades de comprensión, no se pueden confirmar solo con los datos disponibles.
+
+CONCLUSIÓN DEL EQUIPO
+
+Mi primera elección fue Ana, Camila y Hugo porque prioricé las dificultades para trabajar con autonomía. Al conocer el Programa B entendí que la selección también depende de sus condiciones: horarios flexibles, ocho semanas y acceso adicional a computadores. Claude mantuvo a Diego, Ana y Gabriela, pero explicó cómo esas condiciones responden a sus dificultades. Esto muestra que no basta con mirar las notas; también hay que definir el objetivo y revisar la situación de cada estudiante. El equipo debe validar la selección con información completa.
