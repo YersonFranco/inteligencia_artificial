@@ -24,11 +24,16 @@ El pasaporte define el problema que atiende Brújula Van Rossum, el tipo de preg
 
 El flujo organiza la atención de preguntas con reglas, consulta de información oficial y revisión humana. La prueba cruzada incluye una solicitud fuera del alcance y una pregunta que no puede responderse con seguridad sin evidencia en las fuentes.
 
+## Sección 6: bitácora de la feria de las máquinas
+
+Se documentan dos casos del reto: la generación de una explicación a pedido y la aplicación de un descuento mediante una condición fija. Cada registro identifica el mecanismo, la pista del enunciado y un posible error de interpretación.
+
 ## Evidencias de aprendizaje
 
 - Mapa de conceptos y caso de uso delimitado.
 - Portafolio de sesión: dos entradas de bitácora, una tarjeta de decisión y el pasaporte del asistente.
 - Flujo de atención del asistente y prueba de sus límites.
+- Dos entradas de bitácora del reto «La feria de las máquinas».
 
 [Ver el mapa de conceptos](index.html)
 [Volver al portafolio](../../index.html)

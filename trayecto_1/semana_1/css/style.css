@@ -153,6 +153,24 @@
   font-weight: 600;
 }
 
+.bitacora-entrada { border-left: 5px solid #1d4ed8; }
+
+.enunciado-maquina {
+  margin: .25rem 0 1rem;
+  padding-left: .85rem;
+  border-left: 3px solid #d6deea;
+  color: #46515f;
+}
+
+.bitacora-entrada dl div { margin-bottom: .75rem; }
+
+.bitacora-entrada dt {
+  margin-bottom: .15rem;
+  color: #1e3a8a;
+}
+
+.bitacora-entrada dd { margin: 0; }
+
 @media (max-width: 768px) {
   .flujo-asistente { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
