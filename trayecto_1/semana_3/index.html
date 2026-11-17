@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="encabezado encabezado-semana text-white">
     <nav class="container navegacion-semanas" aria-label="Navegación por semanas">
@@ -23,10 +25,14 @@
   <main class="contenedor-semana">
     <section class="introduccion-semana mb-5" aria-labelledby="titulo-semana">
       <p class="text-secondary mb-1">Trayecto 1 · Semana 3</p>
-      <h2 class="h3 fw-bold titulo-seccion" id="titulo-semana">¿Cómo pedir una respuesta clara y comprobar que funciona?</h2>
-      <p class="mb-0">La ingeniería de prompts consiste en expresar con claridad qué debe hacer un modelo, con qué información y en qué formato. Después, sus respuestas se comparan con casos concretos para comprobar si siguen la instrucción, reconocen lo que no saben y respetan los límites definidos.</p>
+      <h2 class="h3 fw-bold titulo-seccion" id="titulo-semana">¿Cómo pedir una respuesta clara y comprobar que funciona?
+      </h2>
+      <p class="mb-0">La ingeniería de prompts consiste en expresar con claridad qué debe hacer un modelo, con qué
+        información y en qué formato. Después, sus respuestas se comparan con casos concretos para comprobar si siguen
+        la instrucción, reconocen lo que no saben y respetan los límites definidos.</p>
       <aside class="distincion-servicio mt-3">
-        <strong>Una instrucción más precisa ayuda, pero no garantiza una respuesta correcta.</strong> Por eso el prompt y la respuesta se revisan juntos: primero se define lo esperado y luego se prueba con ejemplos variados.
+        <strong>Una instrucción más precisa ayuda, pero no garantiza una respuesta correcta.</strong> Por eso el prompt
+        y la respuesta se revisan juntos: primero se define lo esperado y luego se prueba con ejemplos variados.
       </aside>
     </section>
 
@@ -37,37 +43,46 @@
         <div class="col-md-6">
           <article class="contenido-semana h-100">
             <h3 class="h5 fw-bold text-primary">Quién responde y qué debe hacer</h3>
-            <p class="mb-0">Define el rol cuando aporte contexto y formula una tarea concreta. «Resume los cambios principales» indica mejor el trabajo que «cuéntame sobre este tema».</p>
+            <p class="mb-0">Define el rol cuando aporte contexto y formula una tarea concreta. «Resume los cambios
+              principales» indica mejor el trabajo que «cuéntame sobre este tema».</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="contenido-semana h-100">
             <h3 class="h5 fw-bold text-primary">Contexto y fuentes</h3>
-            <p class="mb-0">Indica para quién es la respuesta y qué material debe usar. Separar los datos disponibles de lo que falta ayuda a evaluar si la respuesta se apoya en la información correcta.</p>
+            <p class="mb-0">Indica para quién es la respuesta y qué material debe usar. Separar los datos disponibles de
+              lo que falta ayuda a evaluar si la respuesta se apoya en la información correcta.</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="contenido-semana h-100">
             <h3 class="h5 fw-bold text-primary">Límites y datos ausentes</h3>
-            <p class="mb-0">Aclara qué debe evitar y qué hacer si no encuentra una respuesta: reconocer que falta información y no completar los vacíos con suposiciones.</p>
+            <p class="mb-0">Aclara qué debe evitar y qué hacer si no encuentra una respuesta: reconocer que falta
+              información y no completar los vacíos con suposiciones.</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="contenido-semana h-100">
             <h3 class="h5 fw-bold text-primary">Formato y ejemplos</h3>
-            <p class="mb-0">Pide una forma de salida concreta —por ejemplo, una tabla, tres viñetas o un JSON con claves definidas—. Si también se necesita un patrón o estilo específico, incluye ejemplos de entrada y respuesta.</p>
+            <p class="mb-0">Pide una forma de salida concreta —por ejemplo, una tabla, tres viñetas o un JSON con claves
+              definidas—. Si también se necesita un patrón o estilo específico, incluye ejemplos de entrada y respuesta.
+            </p>
           </article>
         </div>
       </div>
       <aside class="idea-clave mt-3">
-        <strong>Zero-shot y few-shot:</strong> zero-shot plantea la tarea sin ejemplos; few-shot incluye algunos ejemplos para mostrar el patrón esperado. Se elige según la tarea, no por la cantidad de texto.
+        <strong>Zero-shot y few-shot:</strong> zero-shot plantea la tarea sin ejemplos; few-shot incluye algunos
+        ejemplos para mostrar el patrón esperado. Se elige según la tarea, no por la cantidad de texto.
       </aside>
-      <p class="contenido-semana mt-3 mb-0"><strong>Plantillas reutilizables:</strong> mantienen estables las instrucciones ya probadas y dejan un espacio variable, como <code>{pregunta}</code>, para el contenido de cada consulta.</p>
+      <p class="contenido-semana mt-3 mb-0"><strong>Plantillas reutilizables:</strong> mantienen estables las
+        instrucciones ya probadas y dejan un espacio variable, como <code>{pregunta}</code>, para el contenido de cada
+        consulta.</p>
     </section>
 
     <section class="mb-5" aria-labelledby="evaluacion-prompt">
       <h2 class="h3 fw-bold titulo-seccion" id="evaluacion-prompt">Cómo evaluar la respuesta</h2>
-      <p>Una sola pregunta no muestra si una plantilla es confiable. Se prepara un conjunto de cinco casos con respuestas esperadas, que incluya preguntas frecuentes, una ambigua y otra fuera del alcance.</p>
+      <p>Una sola pregunta no muestra si una plantilla es confiable. Se prepara un conjunto de cinco casos con
+        respuestas esperadas, que incluya preguntas frecuentes, una ambigua y otra fuera del alcance.</p>
       <div class="row g-3">
         <div class="col-md-6">
           <article class="contenido-semana h-100">
@@ -83,7 +98,9 @@
         <div class="col-md-6">
           <article class="contenido-semana limite-modelo h-100">
             <h3 class="h5 fw-bold">Mantener los casos al comparar</h3>
-            <p class="mb-0">Cuando se modifica una plantilla, se vuelve a probar con los mismos casos. Así se puede comparar si mejoró la precisión, el formato y el manejo de los límites, sin depender de una respuesta que solo suena convincente.</p>
+            <p class="mb-0">Cuando se modifica una plantilla, se vuelve a probar con los mismos casos. Así se puede
+              comparar si mejoró la precisión, el formato y el manejo de los límites, sin depender de una respuesta que
+              solo suena convincente.</p>
           </article>
         </div>
       </div>
@@ -91,7 +108,8 @@
 
     <section class="mb-5" aria-labelledby="plantilla-asistente">
       <h2 class="h3 fw-bold titulo-seccion" id="plantilla-asistente">Plantilla para consultas del clan</h2>
-      <p>Esta instrucción delimita el rol del asistente, las fuentes que puede usar, cómo debe responder cuando falta información y el formato de salida. Incluye dos ejemplos y el espacio variable <code>{pregunta}</code>.</p>
+      <p>Esta instrucción delimita el rol del asistente, las fuentes que puede usar, cómo debe responder cuando falta
+        información y el formato de salida. Incluye dos ejemplos y el espacio variable <code>{pregunta}</code>.</p>
       <article class="contenido-semana prompt-contenedor">
         <pre class="prompt-codigo mb-3"><code>Eres el asistente del clan de Riwi y respondes a coders que están empezando el entrenamiento.
 Usa solo la información de la Guía del clan y el calendario oficial. Si un dato no aparece en esos materiales, dilo y recomienda consultarlo con el TL o el coach.
@@ -118,8 +136,10 @@ Pregunta: {pregunta}</code></pre>
         <ul>
           <li>Cada semana incluye el video del tema, trabajo independiente en Moodle y una hora con el TL por clan.</li>
           <li>La sesión con el TL es los martes y dura una hora con el clan.</li>
-          <li>La evidencia semanal se entrega en la Tarea de Moodle; la de semana 3 es una plantilla de prompt con cinco casos.</li>
-          <li>La guía no incluye fechas límite ni notas. Las notas, permisos y excepciones corresponden al TL o al coach.</li>
+          <li>La evidencia semanal se entrega en la Tarea de Moodle; la de semana 3 es una plantilla de prompt con cinco
+            casos.</li>
+          <li>La guía no incluye fechas límite ni notas. Las notas, permisos y excepciones corresponden al TL o al
+            coach.</li>
         </ul>
         <a class="enlace-semana" href="material_consulta_clan.md" download>Descargar material de consulta</a>
       </article>
@@ -127,29 +147,80 @@ Pregunta: {pregunta}</code></pre>
 
     <section class="mb-5" aria-labelledby="casos-prueba">
       <h2 class="h3 fw-bold titulo-seccion" id="casos-prueba">Cinco casos y sus respuestas esperadas</h2>
-      <p>Los casos cubren una consulta frecuente, una entrega, un dato ausente, una pregunta ambigua y una consulta fuera del alcance. Las respuestas esperadas permiten contrastar la salida con el material del clan.</p>
+      <p>Los casos cubren una consulta frecuente, una entrega, un dato ausente, una pregunta ambigua y una consulta
+        fuera del alcance. Las respuestas esperadas permiten contrastar la salida con el material del clan.</p>
       <div class="table-responsive contenido-semana tabla-casos-prompt">
         <table class="table table-bordered align-middle mb-0">
-          <thead><tr><th scope="col">Tipo de caso</th><th scope="col">Pregunta</th><th scope="col">Respuesta esperada</th></tr></thead>
+          <thead>
+            <tr>
+              <th scope="col">Tipo de caso</th>
+              <th scope="col">Pregunta</th>
+              <th scope="col">Respuesta esperada</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><th scope="row">Frecuente</th><td>¿Cuándo es la sesión de IA?</td><td>Los martes, una hora con tu clan. Cita el calendario del clan.</td></tr>
-            <tr><th scope="row">Entrega</th><td>¿Cómo entrego la evidencia?</td><td>En la Tarea de Moodle de la semana; la evidencia de semana 3 es la plantilla con cinco casos. Cita la guía.</td></tr>
-            <tr><th scope="row">Dato ausente</th><td>¿Cuál es la fecha límite de la entrega?</td><td>La guía no informa la fecha; recomienda confirmarla con el TL o el coach y cita la guía.</td></tr>
-            <tr><th scope="row">Ambigua</th><td>¿Y lo de mañana?</td><td>Pide precisar si se refiere al video, al trabajo en Moodle o a la sesión, y cita la guía.</td></tr>
-            <tr><th scope="row">Fuera del alcance</th><td>¿Quién va a ganar el partido del domingo?</td><td>Rechaza con cortesía, redirige a temas del entrenamiento y cita el alcance del asistente.</td></tr>
+            <tr>
+              <th scope="row">Frecuente</th>
+              <td>¿Cuándo es la sesión de IA?</td>
+              <td>Los martes, una hora con tu clan. Cita el calendario del clan.</td>
+            </tr>
+            <tr>
+              <th scope="row">Entrega</th>
+              <td>¿Cómo entrego la evidencia?</td>
+              <td>En la Tarea de Moodle de la semana; la evidencia de semana 3 es la plantilla con cinco casos. Cita la
+                guía.</td>
+            </tr>
+            <tr>
+              <th scope="row">Dato ausente</th>
+              <td>¿Cuál es la fecha límite de la entrega?</td>
+              <td>La guía no informa la fecha; recomienda confirmarla con el TL o el coach y cita la guía.</td>
+            </tr>
+            <tr>
+              <th scope="row">Ambigua</th>
+              <td>¿Y lo de mañana?</td>
+              <td>Pide precisar si se refiere al video, al trabajo en Moodle o a la sesión, y cita la guía.</td>
+            </tr>
+            <tr>
+              <th scope="row">Fuera del alcance</th>
+              <td>¿Quién va a ganar el partido del domingo?</td>
+              <td>Rechaza con cortesía, redirige a temas del entrenamiento y cita el alcance del asistente.</td>
+            </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section class="mb-5 entregable-prompt" aria-labelledby="entregable-prompt-title">
+      <div class="contenido-semana">
+        <p class="text-secondary mb-1">Entregable · Reto de Prompt Engineering</p>
+        <h2 class="h3 fw-bold titulo-seccion" id="entregable-prompt-title">BiblioWeb: una biblioteca hecha con IA</h2>
+        <p>Reto de Prompt Engineering entre clanes: cada célula creó una página web o aplicación con ayuda de IA, partiendo de una idea propia. Mi clan, Orion, eligió BiblioWeb, un sitio de biblioteca con catálogo, ficha de cada libro y panel de administración. Se construyó con varias herramientas de IA, una tras otra, y el repositorio documenta los prompts y el resultado de cada etapa.</p>
+        <ul class="entregable-lista">
+          <li><strong>El prompt:</strong> las instrucciones usadas para construir el proyecto, registradas en el README del repositorio.</li>
+          <li><strong>La aplicación:</strong> la versión desarrollada con ayuda de IA, publicada en línea.</li>
+          <li><strong>El repositorio:</strong> el código del clan, con sus commits correspondientes.</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-primary" href="https://bibliowise-reading-companion.lovable.app/" target="_blank" rel="noopener noreferrer">Ver la aplicación<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          <a class="btn btn-outline-primary" href="https://github.com/C8-Orion/biblioweb_ia" target="_blank" rel="noopener noreferrer">Ver el repositorio en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+        </div>
       </div>
     </section>
 
     <section aria-labelledby="evidencias-semana">
       <h2 class="h3 fw-bold titulo-seccion" id="evidencias-semana">Evidencias de aprendizaje</h2>
       <article class="contenido-semana">
-        <p>El trabajo de la semana reúne una plantilla de prompt reutilizable y cinco casos de prueba con sus respuestas esperadas. El conjunto permite revisar tanto las consultas habituales como la ambigüedad, la falta de información y las preguntas fuera del alcance.</p>
-        <p class="mb-0">La propuesta retoma la delimitación del asistente y el uso de fuentes establecidos en la semana 1.</p>
+        <p>El trabajo de la semana reúne una plantilla de prompt reutilizable y cinco casos de prueba con sus respuestas
+          esperadas. El conjunto permite revisar tanto las consultas habituales como la ambigüedad, la falta de
+          información y las preguntas fuera del alcance.</p>
+        <p class="mb-0">La propuesta retoma la delimitación del asistente y el uso de fuentes establecidos en la semana
+          1.</p>
       </article>
     </section>
   </main>
-  <footer class="pie text-center text-white"><p class="mb-0">&copy; 2026 Yerson Franco</p></footer>
+  <footer class="pie text-center text-white">
+    <p class="mb-0">&copy; 2026 Yerson Franco</p>
+  </footer>
 </body>
+
 </html>

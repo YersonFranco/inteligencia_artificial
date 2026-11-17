@@ -8,6 +8,7 @@ La página explica los componentes de una instrucción, la diferencia entre zero
 
 - Plantilla de prompt reutilizable.
 - Cinco casos de prueba con respuestas esperadas, incluida una pregunta ambigua y una fuera de tema.
+- Entregable del reto de Prompt Engineering: BiblioWeb, hecho con IA por el clan Orion ([aplicación](https://bibliowise-reading-companion.lovable.app/) y [repositorio](https://github.com/C8-Orion/biblioweb_ia)).
 
 ## Archivos de la actividad
 

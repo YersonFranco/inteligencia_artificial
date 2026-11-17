@@ -39,3 +39,9 @@
   background: #e9edf6;
   color: #23386f;
 }
+
+.entregable-prompt .contenido-semana { border-left: 5px solid #6750e8; }
+
+.entregable-lista { padding-left: 1.25rem; }
+
+.entregable-lista li { margin-bottom: .35rem; }
